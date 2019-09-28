@@ -1,0 +1,548 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: url('Oswald-Bold.otf');
+}
+
+@font-face {
+    font-family: "MSYH";
+    src: url('MSYH.TTC');
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Han Sans CN', 'Helvetica', 'PingFang SC', '微软雅黑', 'Microsoft YaHei', '思源宋', 'Arial', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    font-weight: 300;
+    background: #fff;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+a {
+    margin: 0;
+    font-weight: 300;
+}
+
+a,
+a:visited,
+a:hover {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+html {
+    width: 100%;
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    position: relative;
+    overflow: auto;
+    font-size: 16px;
+    -webkit-transition: background 1s;
+    -moz-transition: background 1s;
+    -o-transition: background 1s;
+    transition: background 1s
+}
+
+body.canscroll {
+    overflow: auto;
+    /*background: rgb(249,248,248);*/
+}
+
+#scroll {
+    width: 100vw;
+    height: 3000px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    background-image: url(../img/background.png)
+}
+
+.scroll__text {
+    position: relative;
+    margin: 0 auto;
+    /* width: 33%; */
+}
+
+.arrow {
+    width: 4rem;
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    margin-left: -2rem;
+    border-radius: 50%;
+    -webkit-animation: swipeUp 1.5s ease infinite;
+}
+
+.pc .arrow {
+    display: none;
+}
+
+@-webkit-keyframes swipeUp {
+    0% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0.5;
+        -webkit-transform: translateY(-4rem);
+        transform: translateY(-4rem);
+    }
+}
+
+.step {
+    position: relative;
+    /*margin: 24px auto 48px auto; */
+    /*height: 180vh;*/
+}
+
+.step[data-step="why"] {
+    position: relative;
+    /*height: 100vh;*/
+}
+
+.step.is-active {
+    background-color: lightgoldenrodyellow;
+}
+
+.step .bgSticky {
+    /*height: 100vh;*/
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    /*background-image: url('../img/searchIcon.svg');*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: 10;
+}
+
+.step .cover {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#end .cover {
+    opacity: 0;
+}
+
+.step .panel {
+    position: absolute;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    /*padding-top: 50vh;*/
+    /*background-image: url('../img/searchIcon.svg');*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: 0;
+    transition: 1s;
+}
+
+.step .panel .words {
+    width: 75%;
+    margin: auto;
+    padding: 0.5rem;
+    text-align: center;
+    color: #fff;
+    line-height: 100%;
+    position: relative;
+}
+
+.step .panel .words.yellow {
+    background: rgba(253, 245, 227, .9);
+    color: #000;
+}
+
+.step .panel .words .bold {
+    font-weight: bold;
+}
+
+.step .panel .linkedinIcon {
+    width: 1.5rem;
+    height: 1.5rem;
+    /*background: #fff;*/
+    border-radius: 5%;
+    background-image: url('../img/linkedinIcon.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: inline-block;
+    text-align: right;
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+}
+
+.step .panel .yellow .linkedinIcon {
+    background-image: url('../img/linkedinIconBlue.png');
+}
+
+.rhombus {
+    height: 200vh;
+    width: 100%;
+    position: absolute;
+    top: 0
+}
+
+.rhombus div {
+    position: sticky;
+    top: 75%;
+    z-index: 20;
+    width: 90%;
+    height: 149px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.topBar {
+    position: fixed;
+    top: 1rem;
+    left: 25%;
+    width: 50%;
+    height: 3rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: 0;
+    transition: 1s;
+}
+
+.leftBar {
+    position: fixed;
+    top: 10rem;
+    left: 3rem;
+    width: 5%;
+    height: 15rem;
+    margin-top: 20rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: 0;
+    transition: 1s;
+}
+
+.leftSlider {
+    position: fixed;
+    top: 10rem;
+    left: 1rem;
+    width: 5%;
+    height: 15rem;
+    margin-top: 20rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: 0;
+    transition: 1s;
+}
+
+.bottomText {
+    position: absolute;
+    bottom: 2%;
+    width: 100%;
+    height: 4%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.logo {
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    left: 15%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.back1 {
+    position: absolute;
+    width: 100%;
+    height: 92%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.back2 {
+    position: absolute;
+    width: 42%;
+    height: 42%;
+    top: 42%;
+    left: 5%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.back_rotate1 {
+    -webkit-transition-property: -webkit-transform;
+    -webkit-transition-duration: 1s;
+    -moz-transition-property: -moz-transform;
+    -moz-transition-duration: 1s;
+    -webkit-animation: rotate1 5s linear infinite;
+    -moz-animation: rotate1 5s linear infinite;
+    -o-animation: rotate1 5s linear infinite;
+    animation: rotate1 5s linear infinite;
+}
+
+.back_rotate2 {
+    -webkit-transition-property: -webkit-transform;
+    -webkit-transition-duration: 1s;
+    -moz-transition-property: -moz-transform;
+    -moz-transition-duration: 1s;
+    -webkit-animation: rotate2 5s linear infinite;
+    -moz-animation: rotate2 5s linear infinite;
+    -o-animation: rotate2 5s linear infinite;
+    animation: rotate2 5s linear infinite;
+}
+
+@-webkit-keyframes rotate1 {
+    from {
+        -webkit-transform: rotate(0deg)
+    }
+    to {
+        -webkit-transform: rotate(360deg)
+    }
+}
+
+@-moz-keyframes rotate1 {
+    from {
+        -moz-transform: rotate(0deg)
+    }
+    to {
+        -moz-transform: rotate(360deg)
+    }
+}
+
+@-o-keyframes rotate1 {
+    from {
+        -o-transform: rotate(0deg)
+    }
+    to {
+        -o-transform: rotate(360deg)
+    }
+}
+
+@keyframes rotate1 {
+    from {
+        transform: rotate(0deg)
+    }
+    to {
+        transform: rotate(360deg)
+    }
+}
+
+@-webkit-keyframes rotate2 {
+    from {
+        -webkit-transform: rotate(360deg)
+    }
+    to {
+        -webkit-transform: rotate(0deg)
+    }
+}
+
+@-moz-keyframes rotate2 {
+    from {
+        -moz-transform: rotate(360deg)
+    }
+    to {
+        -moz-transform: rotate(0deg)
+    }
+}
+
+@-o-keyframes rotate2 {
+    from {
+        -o-transform: rotate(360deg)
+    }
+    to {
+        -o-transform: rotate(0deg)
+    }
+}
+
+@keyframes rotate2 {
+    from {
+        transform: rotate(360deg)
+    }
+    to {
+        transform: rotate(0deg)
+    }
+}
+
+#lastPage {
+    overflow-x: hidden;
+}
+
+.formText {
+    width: 100%;
+    position: absolute;
+    bottom: 6%;
+    text-align: center;
+    color: #fff;
+    font-size: 10px;
+    letter-spacing: 0.3rem;
+    -webkit-text-stroke: 0.05px red;
+}
+
+.formText p {
+    margin: 1rem auto;
+}
+
+.year {
+    font-family: 'Oswald';
+    color: #fff;
+    font-size: 3rem;
+}
+
+.step .panel .history {
+    width: 60%;
+    font-family: 'MSYH';
+    border: 1px solid red;
+    border-radius: 50rem;
+    font-size: 1.1rem;
+    margin: 0.8rem auto;
+    transition: 1s
+}
+
+.step .panel .picture {
+    width: 60%;
+    margin: auto;
+    height: 20rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.map {
+    position: relative;
+    width: 90%;
+    height: 50rem;
+    margin: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.compass {
+    position: absolute;
+    right: 3rem;
+    top: 5rem;
+    width: 5rem;
+    height: 5rem;
+    margin: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.pointer {
+    position: absolute;
+    right: 4.2rem;
+    top: 6rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.circle {
+    width: 2.4rem;
+    height: 2.4rem;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.inner_circle {
+    background: #fff;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    margin: 0.35rem auto;
+}
+
+.first_rects {
+    width: 100%;
+    height: 680px;
+    margin: 0 auto;
+    position: absolute;
+}
+
+.last_rects {
+    width: 100%;
+    height: 680px;
+    margin: 0 auto;
+    position: absolute;
+}
+
+.svg_rect {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 30rem;
+    z-index: 2000;
+    transition: 1s;
+    opacity: 1;
+}
+
+.updown {
+    width: 25px;
+    position: fixed;
+    left: 50%;
+    margin-left: -13px;
+    top: 150px;
+    bottom: 0;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.updown img {
+    width: 100%;
+    position: absolute;
+}
+
+.up {
+    top: 0;
+}
+
+.down {
+    bottom: 0;
+    opacity: 0;
+}
+
+.dashline {
+    position: absolute;
+    top: 4px;
+    bottom: 4px;
+    left: 50%;
+    border-left: 1px dashed #fff;
+}

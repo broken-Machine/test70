@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Who buys from China?">
+    <meta property="og:description" content="成都工业70年">
+    <meta property="og:image" content="https://linkedin-mp.arcdmi.com/WinningGlobally/img/share.png">
+    <meta property="og:url" content="https://linkedin-mp.arcdmi.com/WinningGlobally">
+
+    <title>成都工业70年</title>
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- Styles -->
+    <link rel="stylesheet" type="text/css" href="css/init.css" />
+
+    <link rel="stylesheet" type="text/css" href="css/e.css" />
+
+    <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+
+
+    <!-- <script type="text/javascript" src='js/util/clipboard.min.js'></script> -->
+    <script src="js/isMobile.min.js"></script>
+    <script src="js/util/Stats.js"></script>
+    <script src="js/util/dat.gui.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="./js/scaleToWindow.js"></script>
+    <script src="./js/jquery-ui-1.10.3.min.js"></script>
+    <script src="./js/jquery.fullPage.min.js"></script>
+    <!-- <script src="https://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script> -->
+
+
+
+</head>
+
+<body>
+
+    <section id='scroll'>
+        <div class='scroll__text'>
+            <div class="bg-wrap" style=" width: 100%;height: 100vh;overflow: hidden;position: fixed;">
+                <div class="bg" style=" height:3912px; width:100%;position: absolute;top:0;background: url(./img/background.png) no-repeat 0 0/100% 100%;"></div>
+            </div>
+            <div class="step" data-step='fishMove' id="firstPage">
+                <div class="bgSticky" style="background-image: url('./img/firstPage.png')">
+                    <img class="arrow" src="img/swipeUp.png" />
+                </div>
+            </div>
+            <div class="rhombus">
+                <div id="rhombus" style="background-image: url('./img/rhombus.png')"></div>
+            </div>
+            <div class="step" data-step='years' id="yearsPage">
+                <div class="topBar" style="background-image: url(./img/topBar.png)"></div>
+                <div class='leftBar' style="background-image: url(./img/time.png)"></div>
+                <div class='leftSlider' style="background-image: url(./img/leftSlider.png)"></div>
+                <div id='first_rects' class='first_rects'></div>
+                <div id='last_rects' class='last_rects'></div>
+                <div id='rect1' class='svg_rect'></div>
+                <div id='rect2' class='svg_rect'></div>
+                <div id='rect3' class='svg_rect'></div>
+                <div id='rect4' class='svg_rect'></div>
+                <div id='rect5' class='svg_rect'></div>
+                <div id='rect6' class='svg_rect'></div>
+                <div id='rect7' class='svg_rect'></div>
+                <div id='rect8' class='svg_rect'></div>
+                <div class="panel p1">
+                    <div>
+                        <div class='words year'>1949
+                        </div>
+                        <div class='circle'>
+                            <div class='inner_circle'></div>
+                        </div>
+                        <div class='history words'>工业基础基本为零，只有“三根半烟囱”</div>
+                    </div>
+                </div>
+                <div class="panel p2">
+                    <div class='words year'>1959</div>
+                    <div class='circle'>
+                        <div class='inner_circle'></div>
+                    </div>
+                    <div class='history words'>一五、二五国家布局的三大电子信息基地之一</div>
+                </div>
+                <div class="panel p3">
+                    <div class='words year'>1969</div>
+                    <div class='circle'>
+                        <div class='inner_circle'></div>
+                    </div>
+                    <div class='history words'>“三线”建设国家布局奠定现代工业发展基础</div>
+                </div>
+                <div class="panel p4">
+                    <div class='words year'>1979</div>
+                    <div class='circle'>
+                        <div class='inner_circle'></div>
+                    </div>
+                    <div class='history words'>改革开放，民营经济加速发展</div>
+                </div>
+                <div class="panel p5">
+                    <div class='words year'>1989</div>
+                    <div class='circle'>
+                        <div class='inner_circle'></div>
+                    </div>
+                    <div class='history words'>乡镇企业异军突起，完善成都工业体系</div>
+                </div>
+                <div class="panel p6">
+                    <div class='words year'>1999</div>
+                    <div class='circle'>
+                        <div class='inner_circle'></div>
+                    </div>
+                    <div class='history words'>新世纪，实施工业空间布局、产业结构调整</div>
+                </div>
+                <div class="panel p7">
+                    <div class='words year'>2009</div>
+                    <div class='circle'>
+                        <div class='inner_circle'></div>
+                    </div>
+                    <div class='history words'>扩大对外开放，积极引入国际知名企业</div>
+                </div>
+                <div class="panel p8">
+                    <!-- <div class='picture' style="background-image: url(./img/2019s1.jpg)"></div> -->
+                    <div class='words year'>2019</div>
+                    <div class='circle'>
+                        <div class='inner_circle'></div>
+                    </div>
+                    <div class='history words'>进入新时代，先进制造业高质量发展</div>
+                </div>
+                <div class="panel" style='opacity: 1;'>
+                    <!-- <div id='mapRect' class='first_rects'></div> -->
+                    <div class='map' style="background-image: url(./img/map.png)">
+                        <div class='compass' style="background-image: url(./img/compass.png)"></div>
+                        <div class='pointer' style="background-image: url(./img/pointer.png)"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="step" data-step='end' id="lastPage">
+                <div class="back1 back_rotate1" style="background-image: url('./img/back1.png')"></div>
+                <div class="back2 back_rotate2" style="background-image: url('./img/back2.png')"></div>
+                <div class="logo" style="background-image: url('./img/logo.png')"></div>
+                <div class='formText'>
+                    <p>成都市经信局</p>
+                    <p>四川日报成都分社</p>
+                    <p>川报全媒体集群MORE大数据工作室</p>
+                </div>
+                <div class="bottomText" style="background-image: url('./img/bottomText.png')"></div>
+            </div>
+        </div>
+
+        <div class="updown">
+            <img class="up" src="img/up.png" alt="">
+            <div class="dashline"></div>
+            <img class="down" src="img/down.png" alt="">
+        </div>
+    </section>
+
+    <!-- <div id="Stats-output"></div> -->
+    <div id="Stats-output" style="position: fixed; z-index: 10; top: 0; left: 0;"></div>
+    <script>
+        var _hmt = _hmt || [];
+    </script>
+    <script src='js/intersection-observer.js'></script>
+    <script src='js/scrollama.js'></script>
+    <script src="js/d3.v4.min.js"></script>
+    <script src="js/triangleBar.js"></script>
+
+    <!-- 	<script type="text/javascript" src="./js/data.js"></script>
+	<script type="text/javascript" src="./js/processData.js"></script> -->
+    <script type="text/javascript" src="./js/config.js"></script>
+    <script type="text/javascript" src="./js/fsm.js"></script>
+    <script type="text/javascript" src="./js/layout.js"></script>
+    <script src='./js/startScroll.js'></script>
+    <script src='./js/e.js'></script>
+    <script src="./js/rect.js"></script>
+
+    <script>
+        $(window).scroll(function() {
+            var h1 = $("#scroll").height() - window.innerHeight;
+            var h2 = (3912 - window.innerHeight) * $(window).scrollTop() / h1
+            $(".bg").css("top", -h2 + "px");
+            if ($(window).scrollTop() >= window.innerHeight * 2 - 149) {
+                $(".rhombus div").css('position', 'fixed');
+                $(".rhombus div").css('top', '0');
+                $('.topBar').css('opacity', '1')
+                $('.leftBar').css('opacity', '1')
+                $('.leftSlider').css('opacity', '1')
+                $(".updown").css('opacity', '1')
+            } else {
+                $(".rhombus div").css('position', 'sticky');
+                $(".rhombus div").css('top', '75%');
+                $('.topBar').css('opacity', '0')
+                $('.leftBar').css('opacity', '0')
+                $('.leftSlider').css('opacity', '0')
+                $(".updown").css('opacity', '0')
+            }
+            if ($(window).scrollTop() >= window.innerHeight * 10 - 149) {
+                $(".rhombus div").css('position', 'absolute');
+            }
+            if ($(window).scrollTop() >= window.innerHeight * 10 - 149) {
+                $('.leftBar').css('opacity', '0')
+                $('.leftSlider').css('opacity', '0')
+                $('.updown').css('opacity', '0')
+            }
+
+            if ($(window).scrollTop() >= window.innerHeight * 2) {
+                d3.select('#first_rects svg').transition().duration(2000).attr('height', '0').ease(d3.easeExpOut);
+            } else {
+                d3.select('#first_rects svg').transition().duration(2000).attr('height', window.innerHeight / 2).ease(d3.easeExpOut);;
+            }
+
+            if ($(window).scrollTop() >= window.innerHeight * 9.5) {
+                d3.select('#last_rects svg').transition().duration(2000).attr('height', window.innerHeight).ease(d3.easeExpOut).attr('opacity', '1');
+            } else {
+                d3.select('#last_rects svg').transition().duration(2000).attr('height', 0).ease(d3.easeExpOut).attr('opacity', '1');
+            }
+            if ($(window).scrollTop() >= window.innerHeight * 10.5) {
+                d3.select('#last_rects svg').transition().duration(2000).attr('opacity', '0').ease(d3.easeExpOut)
+            }
+
+            if ($(window).scrollTop() >= window.innerHeight * 2.2 && $(window).scrollTop() <= window.innerHeight * 2.8) {
+                $('.p1').css('opacity', '1')
+                $('#rect1').css('opacity', '1')
+            } else {
+                $('.p1').css('opacity', '0')
+                $('#rect1').css('opacity', '0')
+            }
+            if ($(window).scrollTop() >= window.innerHeight * 3.2 && $(window).scrollTop() <= window.innerHeight * 3.8) {
+                $('.p2').css('opacity', '1')
+                $('#rect2').css('opacity', '1')
+            } else {
+                $('.p2').css('opacity', '0')
+                $('#rect2').css('opacity', '0')
+            }
+            if ($(window).scrollTop() >= window.innerHeight * 4.2 && $(window).scrollTop() <= window.innerHeight * 4.8) {
+                $('.p3').css('opacity', '1')
+                $('#rect3').css('opacity', '1')
+            } else {
+                $('.p3').css('opacity', '0')
+                $('#rect3').css('opacity', '0')
+            }
+            if ($(window).scrollTop() >= window.innerHeight * 5.2 && $(window).scrollTop() <= window.innerHeight * 5.8) {
+                $('.p4').css('opacity', '1')
+                $('#rect4').css('opacity', '1')
+                if ($('.p4').hasClass('p4svg')) {
+
+                } else {
+                    p4Rect.append("svg").attr('class', 'p4svg').attr('width', window.innerWidth).attr('height', window.innerWidth / 2).attr('position', 'absolute').attr('left', '0').attr('top', '-20%').attr('viewBox', "0 0 524 389.84").html('<defs><style>.cls-1,.cls-2{fill:none;}.cls-1{stroke:#fff;stroke-miterlimit:10;}.cls-3{fill:#fff;}</style></defs><title>a</title><path class="cls-1 EVoYIwfV_0" d="M141.5,0.5L398.5,0.5"></path><path class="cls-1 EVoYIwfV_1" d="M24.5,100.05L24.5,8.5L112.05,8.5"></path><path class="cls-1 EVoYIwfV_2" d="M109.82,305.5L24.5,305.5L24.5,239.59"></path><path class="cls-1 EVoYIwfV_3" d="M520.5,265.26L520.5,305.5L432.43,305.5"></path><path class="cls-1 EVoYIwfV_4" d="M520.5,175.4L520.5,239.59"></path><path class="cls-1 EVoYIwfV_5" d="M429.08,8.5L520.5,8.5L520.5,111.77"></path><path class="cls-1 EVoYIwfV_6" d="M143,310.5L398.5,308.5"></path><path class="cls-1 EVoYIwfV_7" d="M443.5,389.5L520.5,305.5"></path><path class="cls-2 EVoYIwfV_8" d="M17.5,295.5L17.5,228.5"></path><path class="cls-3 EVoYIwfV_9" d="M26,230.5v3H15v-3H26m1-1H14v5H27v-5Z" transform="translate(0 -55)"></path><path class="cls-3 EVoYIwfV_10" width="19.78" height="5" d="M7.22 182.2 L27 182.2 L27 187.2 L7.22 187.2 Z"></path><path class="cls-3 EVoYIwfV_11" width="17.49" height="5" d="M9.51 189.9 L27 189.9 L27 194.9 L9.51 194.9 Z"></path><path class="cls-3 EVoYIwfV_12" width="27" height="5" d="M0 197.6 L27 197.6 L27 202.6 L0 202.6 Z"></path><path class="cls-3 EVoYIwfV_13" width="13" height="5" d="M14 205.3 L27 205.3 L27 210.3 L14 210.3 Z"></path><path class="cls-3 EVoYIwfV_14" width="17.49" height="5" d="M9.51 213 L27 213 L27 218 L9.51 218 Z"></path><path class="cls-3 EVoYIwfV_15" d="M162,315L144.51,315L140.51,310L158,310L162,315Z"></path><path class="cls-3 EVoYIwfV_16" d="M381.51,313L399,313L403,308L385.51,308L381.51,313Z"></path><path class="cls-3 EVoYIwfV_17" d="M515,116.25L515,98.75L520,94.75L520,112.25L515,116.25Z"></path><path class="cls-3 EVoYIwfV_18" d="M402.25,6L384.75,6L380.75,1L398.25,1L402.25,6Z"></path><path class="cls-3 EVoYIwfV_19" d="M137.75,6L155.25,6L159.25,1L141.75,1L137.75,6Z"></path><path class="cls-3 EVoYIwfV_20" d="M30,104.25L30,86.75L25,82.75L25,100.25L30,104.25Z"></path><path class="cls-3 EVoYIwfV_21" width="6" height="6" d="M 25,6 L 25,6 A 3,3,0,0,1,28,9 L 28,9 A 3,3,0,0,1,25,12 L 25,12 A 3,3,0,0,1,22,9 L 22,9 A 3,3,0,0,1,25,6"></path><path class="cls-3 EVoYIwfV_22" width="6" height="6" d="M 521,238 L 521,238 A 3,3,0,0,1,524,241 L 524,241 A 3,3,0,0,1,521,244 L 521,244 A 3,3,0,0,1,518,241 L 518,241 A 3,3,0,0,1,521,238"></path><path class="cls-3 EVoYIwfV_23" width="6" height="6" d="M 521,261 L 521,261 A 3,3,0,0,1,524,264 L 524,264 A 3,3,0,0,1,521,267 L 521,267 A 3,3,0,0,1,518,264 L 518,264 A 3,3,0,0,1,521,261"></path><path class="cls-3 EVoYIwfV_24" width="6" height="6" d="M 520,303 L 520,303 A 3,3,0,0,1,523,306 L 523,306 A 3,3,0,0,1,520,309 L 520,309 A 3,3,0,0,1,517,306 L 517,306 A 3,3,0,0,1,520,303"></path><style data-made-with="vivus-instant">.EVoYIwfV_0{stroke-dasharray:257 259;stroke-dashoffset:258;animation:EVoYIwfV_draw 1333ms ease-in-out 0ms forwards;}.EVoYIwfV_1{stroke-dasharray:180 182;stroke-dashoffset:181;animation:EVoYIwfV_draw 1333ms ease-in-out 27ms forwards;}.EVoYIwfV_2{stroke-dasharray:152 154;stroke-dashoffset:153;animation:EVoYIwfV_draw 1333ms ease-in-out 55ms forwards;}.EVoYIwfV_3{stroke-dasharray:129 131;stroke-dashoffset:130;animation:EVoYIwfV_draw 1333ms ease-in-out 83ms forwards;}.EVoYIwfV_4{stroke-dasharray:65 67;stroke-dashoffset:66;animation:EVoYIwfV_draw 1333ms ease-in-out 111ms forwards;}.EVoYIwfV_5{stroke-dasharray:195 197;stroke-dashoffset:196;animation:EVoYIwfV_draw 1333ms ease-in-out 138ms forwards;}.EVoYIwfV_6{stroke-dasharray:256 258;stroke-dashoffset:257;animation:EVoYIwfV_draw 1333ms ease-in-out 166ms forwards;}.EVoYIwfV_7{stroke-dasharray:114 116;stroke-dashoffset:115;animation:EVoYIwfV_draw 1333ms ease-in-out 194ms forwards;}.EVoYIwfV_8{stroke-dasharray:67 69;stroke-dashoffset:68;animation:EVoYIwfV_draw 1333ms ease-in-out 222ms forwards;}.EVoYIwfV_9{stroke-dasharray:64 66;stroke-dashoffset:65;animation:EVoYIwfV_draw 1333ms ease-in-out 249ms forwards;}.EVoYIwfV_10{stroke-dasharray:50 52;stroke-dashoffset:51;animation:EVoYIwfV_draw 1333ms ease-in-out 277ms forwards;}.EVoYIwfV_11{stroke-dasharray:45 47;stroke-dashoffset:46;animation:EVoYIwfV_draw 1333ms ease-in-out 305ms forwards;}.EVoYIwfV_12{stroke-dasharray:64 66;stroke-dashoffset:65;animation:EVoYIwfV_draw 1333ms ease-in-out 333ms forwards;}.EVoYIwfV_13{stroke-dasharray:36 38;stroke-dashoffset:37;animation:EVoYIwfV_draw 1333ms ease-in-out 361ms forwards;}.EVoYIwfV_14{stroke-dasharray:45 47;stroke-dashoffset:46;animation:EVoYIwfV_draw 1333ms ease-in-out 388ms forwards;}.EVoYIwfV_15{stroke-dasharray:48 50;stroke-dashoffset:49;animation:EVoYIwfV_draw 1333ms ease-in-out 416ms forwards;}.EVoYIwfV_16{stroke-dasharray:48 50;stroke-dashoffset:49;animation:EVoYIwfV_draw 1333ms ease-in-out 444ms forwards;}.EVoYIwfV_17{stroke-dasharray:48 50;stroke-dashoffset:49;animation:EVoYIwfV_draw 1333ms ease-in-out 472ms forwards;}.EVoYIwfV_18{stroke-dasharray:48 50;stroke-dashoffset:49;animation:EVoYIwfV_draw 1333ms ease-in-out 499ms forwards;}.EVoYIwfV_19{stroke-dasharray:48 50;stroke-dashoffset:49;animation:EVoYIwfV_draw 1333ms ease-in-out 527ms forwards;}.EVoYIwfV_20{stroke-dasharray:48 50;stroke-dashoffset:49;animation:EVoYIwfV_draw 1333ms ease-in-out 555ms forwards;}.EVoYIwfV_21{stroke-dasharray:19 21;stroke-dashoffset:20;animation:EVoYIwfV_draw 1333ms ease-in-out 583ms forwards;}.EVoYIwfV_22{stroke-dasharray:19 21;stroke-dashoffset:20;animation:EVoYIwfV_draw 1333ms ease-in-out 611ms forwards;}.EVoYIwfV_23{stroke-dasharray:19 21;stroke-dashoffset:20;animation:EVoYIwfV_draw 1333ms ease-in-out 638ms forwards;}.EVoYIwfV_24{stroke-dasharray:19 21;stroke-dashoffset:20;animation:EVoYIwfV_draw 1333ms ease-in-out 666ms forwards;}@keyframes EVoYIwfV_draw{100%{stroke-dashoffset:0;}}@keyframes EVoYIwfV_fade{0%{stroke-opacity:1;}93.54838709677419%{stroke-opacity:1;}100%{stroke-opacity:0;}}</style>')
+                        .append("image")
+                        .attr("x", '5.5%')
+                        .attr("y", '-10%')
+                        .attr("width", '93%')
+                        .attr("height", '100%')
+                        .attr("xlink:href", './img/1979-1.jpg');
+                    p4Rect.append('rect').attr('width', '64%').attr('height', '30px').attr('y', '37%').attr('x', '19.2%').attr('fill', '#808080').attr('opacity', '0.8')
+                    p4Rect.append('text').attr('width', '64%').attr('height', '30px').attr('y', '43%').attr('x', '21%').attr('fill', '#fff').attr('font-size', '1.1rem').html('第一台“双燕”牌冰箱下线（1983）')
+                }
+
+            } else {
+                $('.p4').css('opacity', '0')
+                $('#rect4').css('opacity', '0')
+            }
+            if ($(window).scrollTop() >= window.innerHeight * 6.2 && $(window).scrollTop() <= window.innerHeight * 6.8) {
+                $('.p5').css('opacity', '1')
+                $('#rect5').css('opacity', '1')
+                if ($('.p5').hasClass('p5svg')) {
+
+                } else {
+                    p5Rect.append("svg").attr('class', 'p5svg').attr('width', window.innerWidth).attr('height', window.innerWidth / 2).attr('position', 'absolute').attr('left', '0').attr('top', '-20%').attr('viewBox', "0 0 524 389.84").html('<defs><style>.cls-1,.cls-2{fill:none;}.cls-1{stroke:#fff;stroke-miterlimit:10;}.cls-3{fill:#fff;}</style></defs><title>a</title><path class="cls-1 EVoYIwfV_0" d="M141.5,0.5L398.5,0.5"></path><path class="cls-1 EVoYIwfV_1" d="M24.5,100.05L24.5,8.5L112.05,8.5"></path><path class="cls-1 EVoYIwfV_2" d="M109.82,305.5L24.5,305.5L24.5,239.59"></path><path class="cls-1 EVoYIwfV_3" d="M520.5,265.26L520.5,305.5L432.43,305.5"></path><path class="cls-1 EVoYIwfV_4" d="M520.5,175.4L520.5,239.59"></path><path class="cls-1 EVoYIwfV_5" d="M429.08,8.5L520.5,8.5L520.5,111.77"></path><path class="cls-1 EVoYIwfV_6" d="M143,310.5L398.5,308.5"></path><path class="cls-1 EVoYIwfV_7" d="M443.5,389.5L520.5,305.5"></path><path class="cls-2 EVoYIwfV_8" d="M17.5,295.5L17.5,228.5"></path><path class="cls-3 EVoYIwfV_9" d="M26,230.5v3H15v-3H26m1-1H14v5H27v-5Z" transform="translate(0 -55)"></path><path class="cls-3 EVoYIwfV_10" width="19.78" height="5" d="M7.22 182.2 L27 182.2 L27 187.2 L7.22 187.2 Z"></path><path class="cls-3 EVoYIwfV_11" width="17.49" height="5" d="M9.51 189.9 L27 189.9 L27 194.9 L9.51 194.9 Z"></path><path class="cls-3 EVoYIwfV_12" width="27" height="5" d="M0 197.6 L27 197.6 L27 202.6 L0 202.6 Z"></path><path class="cls-3 EVoYIwfV_13" width="13" height="5" d="M14 205.3 L27 205.3 L27 210.3 L14 210.3 Z"></path><path class="cls-3 EVoYIwfV_14" width="17.49" height="5" d="M9.51 213 L27 213 L27 218 L9.51 218 Z"></path><path class="cls-3 EVoYIwfV_15" d="M162,315L144.51,315L140.51,310L158,310L162,315Z"></path><path class="cls-3 EVoYIwfV_16" d="M381.51,313L399,313L403,308L385.51,308L381.51,313Z"></path><path class="cls-3 EVoYIwfV_17" d="M515,116.25L515,98.75L520,94.75L520,112.25L515,116.25Z"></path><path class="cls-3 EVoYIwfV_18" d="M402.25,6L384.75,6L380.75,1L398.25,1L402.25,6Z"></path><path class="cls-3 EVoYIwfV_19" d="M137.75,6L155.25,6L159.25,1L141.75,1L137.75,6Z"></path><path class="cls-3 EVoYIwfV_20" d="M30,104.25L30,86.75L25,82.75L25,100.25L30,104.25Z"></path><path class="cls-3 EVoYIwfV_21" width="6" height="6" d="M 25,6 L 25,6 A 3,3,0,0,1,28,9 L 28,9 A 3,3,0,0,1,25,12 L 25,12 A 3,3,0,0,1,22,9 L 22,9 A 3,3,0,0,1,25,6"></path><path class="cls-3 EVoYIwfV_22" width="6" height="6" d="M 521,238 L 521,238 A 3,3,0,0,1,524,241 L 524,241 A 3,3,0,0,1,521,244 L 521,244 A 3,3,0,0,1,518,241 L 518,241 A 3,3,0,0,1,521,238"></path><path class="cls-3 EVoYIwfV_23" width="6" height="6" d="M 521,261 L 521,261 A 3,3,0,0,1,524,264 L 524,264 A 3,3,0,0,1,521,267 L 521,267 A 3,3,0,0,1,518,264 L 518,264 A 3,3,0,0,1,521,261"></path><path class="cls-3 EVoYIwfV_24" width="6" height="6" d="M 520,303 L 520,303 A 3,3,0,0,1,523,306 L 523,306 A 3,3,0,0,1,520,309 L 520,309 A 3,3,0,0,1,517,306 L 517,306 A 3,3,0,0,1,520,303"></path><style data-made-with="vivus-instant">.EVoYIwfV_0{stroke-dasharray:257 259;stroke-dashoffset:258;animation:EVoYIwfV_draw 1333ms ease-in-out 0ms forwards;}.EVoYIwfV_1{stroke-dasharray:180 182;stroke-dashoffset:181;animation:EVoYIwfV_draw 1333ms ease-in-out 27ms forwards;}.EVoYIwfV_2{stroke-dasharray:152 154;stroke-dashoffset:153;animation:EVoYIwfV_draw 1333ms ease-in-out 55ms forwards;}.EVoYIwfV_3{stroke-dasharray:129 131;stroke-dashoffset:130;animation:EVoYIwfV_draw 1333ms ease-in-out 83ms forwards;}.EVoYIwfV_4{stroke-dasharray:65 67;stroke-dashoffset:66;animation:EVoYIwfV_draw 1333ms ease-in-out 111ms forwards;}.EVoYIwfV_5{stroke-dasharray:195 197;stroke-dashoffset:196;animation:EVoYIwfV_draw 1333ms ease-in-out 138ms forwards;}.EVoYIwfV_6{stroke-dasharray:256 258;stroke-dashoffset:257;animation:EVoYIwfV_draw 1333ms ease-in-out 166ms forwards;}.EVoYIwfV_7{stroke-dasharray:114 116;stroke-dashoffset:115;animation:EVoYIwfV_draw 1333ms ease-in-out 194ms forwards;}.EVoYIwfV_8{stroke-dasharray:67 69;stroke-dashoffset:68;animation:EVoYIwfV_draw 1333ms ease-in-out 222ms forwards;}.EVoYIwfV_9{stroke-dasharray:64 66;stroke-dashoffset:65;animation:EVoYIwfV_draw 1333ms ease-in-out 249ms forwards;}.EVoYIwfV_10{stroke-dasharray:50 52;stroke-dashoffset:51;animation:EVoYIwfV_draw 1333ms ease-in-out 277ms forwards;}.EVoYIwfV_11{stroke-dasharray:45 47;stroke-dashoffset:46;animation:EVoYIwfV_draw 1333ms ease-in-out 305ms forwards;}.EVoYIwfV_12{stroke-dasharray:64 66;stroke-dashoffset:65;animation:EVoYIwfV_draw 1333ms ease-in-out 333ms forwards;}.EVoYIwfV_13{stroke-dasharray:36 38;stroke-dashoffset:37;animation:EVoYIwfV_draw 1333ms ease-in-out 361ms forwards;}.EVoYIwfV_14{stroke-dasharray:45 47;stroke-dashoffset:46;animation:EVoYIwfV_draw 1333ms ease-in-out 388ms forwards;}.EVoYIwfV_15{stroke-dasharray:48 50;stroke-dashoffset:49;animation:EVoYIwfV_draw 1333ms ease-in-out 416ms forwards;}.EVoYIwfV_16{stroke-dasharray:48 50;stroke-dashoffset:49;animation:EVoYIwfV_draw 1333ms ease-in-out 444ms forwards;}.EVoYIwfV_17{stroke-dasharray:48 50;stroke-dashoffset:49;animation:EVoYIwfV_draw 1333ms ease-in-out 472ms forwards;}.EVoYIwfV_18{stroke-dasharray:48 50;stroke-dashoffset:49;animation:EVoYIwfV_draw 1333ms ease-in-out 499ms forwards;}.EVoYIwfV_19{stroke-dasharray:48 50;stroke-dashoffset:49;animation:EVoYIwfV_draw 1333ms ease-in-out 527ms forwards;}.EVoYIwfV_20{stroke-dasharray:48 50;stroke-dashoffset:49;animation:EVoYIwfV_draw 1333ms ease-in-out 555ms forwards;}.EVoYIwfV_21{stroke-dasharray:19 21;stroke-dashoffset:20;animation:EVoYIwfV_draw 1333ms ease-in-out 583ms forwards;}.EVoYIwfV_22{stroke-dasharray:19 21;stroke-dashoffset:20;animation:EVoYIwfV_draw 1333ms ease-in-out 611ms forwards;}.EVoYIwfV_23{stroke-dasharray:19 21;stroke-dashoffset:20;animation:EVoYIwfV_draw 1333ms ease-in-out 638ms forwards;}.EVoYIwfV_24{stroke-dasharray:19 21;stroke-dashoffset:20;animation:EVoYIwfV_draw 1333ms ease-in-out 666ms forwards;}@keyframes EVoYIwfV_draw{100%{stroke-dashoffset:0;}}@keyframes EVoYIwfV_fade{0%{stroke-opacity:1;}93.54838709677419%{stroke-opacity:1;}100%{stroke-opacity:0;}}</style>')
+                        .append("image")
+                        .attr("x", '5.5%')
+                        .attr("y", '-10%')
+                        .attr("width", '93%')
+                        .attr("height", '100%')
+                        .attr("xlink:href", './img/1989-1.jpg');
+                    p5Rect.append('rect').attr('width', '64%').attr('height', '30px').attr('y', '37%').attr('x', '19.2%').attr('fill', '#808080').attr('opacity', '0.8')
+                    p5Rect.append('text').attr('width', '64%').attr('height', '30px').attr('y', '43%').attr('x', '21%').attr('fill', '#fff').attr('font-size', '1.1rem').html('地奥心血康获中科院科技进步一等奖（1988）')
+                }
+            } else {
+                $('.p5').css('opacity', '0')
+                $('#rect5').css('opacity', '0')
+            }
+            if ($(window).scrollTop() >= window.innerHeight * 7.2 && $(window).scrollTop() <= window.innerHeight * 7.8) {
+                $('.p6').css('opacity', '1')
+                $('#rect6').css('opacity', '1')
+                if ($('.p6').hasClass('p6svg')) {
+
+                } else {
+                    p6Rect.append("svg").attr('class', 'p6svg').attr('width', window.innerWidth).attr('height', window.innerWidth / 2).attr('position', 'absolute').attr('left', '0').attr('top', '-20%').attr('viewBox', "0 0 524 389.84").html('<defs><style>.cls-1,.cls-2{fill:none;}.cls-1{stroke:#fff;stroke-miterlimit:10;}.cls-3{fill:#fff;}</style></defs><title>a</title><path class="cls-1 EVoYIwfV_0" d="M141.5,0.5L398.5,0.5"></path><path class="cls-1 EVoYIwfV_1" d="M24.5,100.05L24.5,8.5L112.05,8.5"></path><path class="cls-1 EVoYIwfV_2" d="M109.82,305.5L24.5,305.5L24.5,239.59"></path><path class="cls-1 EVoYIwfV_3" d="M520.5,265.26L520.5,305.5L432.43,305.5"></path><path class="cls-1 EVoYIwfV_4" d="M520.5,175.4L520.5,239.59"></path><path class="cls-1 EVoYIwfV_5" d="M429.08,8.5L520.5,8.5L520.5,111.77"></path><path class="cls-1 EVoYIwfV_6" d="M143,310.5L398.5,308.5"></path><path class="cls-1 EVoYIwfV_7" d="M443.5,389.5L520.5,305.5"></path><path class="cls-2 EVoYIwfV_8" d="M17.5,295.5L17.5,228.5"></path><path class="cls-3 EVoYIwfV_9" d="M26,230.5v3H15v-3H26m1-1H14v5H27v-5Z" transform="translate(0 -55)"></path><path class="cls-3 EVoYIwfV_10" width="19.78" height="5" d="M7.22 182.2 L27 182.2 L27 187.2 L7.22 187.2 Z"></path><path class="cls-3 EVoYIwfV_11" width="17.49" height="5" d="M9.51 189.9 L27 189.9 L27 194.9 L9.51 194.9 Z"></path><path class="cls-3 EVoYIwfV_12" width="27" height="5" d="M0 197.6 L27 197.6 L27 202.6 L0 202.6 Z"></path><path class="cls-3 EVoYIwfV_13" width="13" height="5" d="M14 205.3 L27 205.3 L27 210.3 L14 210.3 Z"></path><path class="cls-3 EVoYIwfV_14" width="17.49" height="5" d="M9.51 213 L27 213 L27 218 L9.51 218 Z"></path><path class="cls-3 EVoYIwfV_15" d="M162,315L144.51,315L140.51,310L158,310L162,315Z"></path><path class="cls-3 EVoYIwfV_16" d="M381.51,313L399,313L403,308L385.51,308L381.51,313Z"></path><path class="cls-3 EVoYIwfV_17" d="M515,116.25L515,98.75L520,94.75L520,112.25L515,116.25Z"></path><path class="cls-3 EVoYIwfV_18" d="M402.25,6L384.75,6L380.75,1L398.25,1L402.25,6Z"></path><path class="cls-3 EVoYIwfV_19" d="M137.75,6L155.25,6L159.25,1L141.75,1L137.75,6Z"></path><path class="cls-3 EVoYIwfV_20" d="M30,104.25L30,86.75L25,82.75L25,100.25L30,104.25Z"></path><path class="cls-3 EVoYIwfV_21" width="6" height="6" d="M 25,6 L 25,6 A 3,3,0,0,1,28,9 L 28,9 A 3,3,0,0,1,25,12 L 25,12 A 3,3,0,0,1,22,9 L 22,9 A 3,3,0,0,1,25,6"></path><path class="cls-3 EVoYIwfV_22" width="6" height="6" d="M 521,238 L 521,238 A 3,3,0,0,1,524,241 L 524,241 A 3,3,0,0,1,521,244 L 521,244 A 3,3,0,0,1,518,241 L 518,241 A 3,3,0,0,1,521,238"></path><path class="cls-3 EVoYIwfV_23" width="6" height="6" d="M 521,261 L 521,261 A 3,3,0,0,1,524,264 L 524,264 A 3,3,0,0,1,521,267 L 521,267 A 3,3,0,0,1,518,264 L 518,264 A 3,3,0,0,1,521,261"></path><path class="cls-3 EVoYIwfV_24" width="6" height="6" d="M 520,303 L 520,303 A 3,3,0,0,1,523,306 L 523,306 A 3,3,0,0,1,520,309 L 520,309 A 3,3,0,0,1,517,306 L 517,306 A 3,3,0,0,1,520,303"></path><style data-made-with="vivus-instant">.EVoYIwfV_0{stroke-dasharray:257 259;stroke-dashoffset:258;animation:EVoYIwfV_draw 1333ms ease-in-out 0ms forwards;}.EVoYIwfV_1{stroke-dasharray:180 182;stroke-dashoffset:181;animation:EVoYIwfV_draw 1333ms ease-in-out 27ms forwards;}.EVoYIwfV_2{stroke-dasharray:152 154;stroke-dashoffset:153;animation:EVoYIwfV_draw 1333ms ease-in-out 55ms forwards;}.EVoYIwfV_3{stroke-dasharray:129 131;stroke-dashoffset:130;animation:EVoYIwfV_draw 1333ms ease-in-out 83ms forwards;}.EVoYIwfV_4{stroke-dasharray:65 67;stroke-dashoffset:66;animation:EVoYIwfV_draw 1333ms ease-in-out 111ms forwards;}.EVoYIwfV_5{stroke-dasharray:195 197;stroke-dashoffset:196;animation:EVoYIwfV_draw 1333ms ease-in-out 138ms forwards;}.EVoYIwfV_6{stroke-dasharray:256 258;stroke-dashoffset:257;animation:EVoYIwfV_draw 1333ms ease-in-out 166ms forwards;}.EVoYIwfV_7{stroke-dasharray:114 116;stroke-dashoffset:115;animation:EVoYIwfV_draw 1333ms ease-in-out 194ms forwards;}.EVoYIwfV_8{stroke-dasharray:67 69;stroke-dashoffset:68;animation:EVoYIwfV_draw 1333ms ease-in-out 222ms forwards;}.EVoYIwfV_9{stroke-dasharray:64 66;stroke-dashoffset:65;animation:EVoYIwfV_draw 1333ms ease-in-out 249ms forwards;}.EVoYIwfV_10{stroke-dasharray:50 52;stroke-dashoffset:51;animation:EVoYIwfV_draw 1333ms ease-in-out 277ms forwards;}.EVoYIwfV_11{stroke-dasharray:45 47;stroke-dashoffset:46;animation:EVoYIwfV_draw 1333ms ease-in-out 305ms forwards;}.EVoYIwfV_12{stroke-dasharray:64 66;stroke-dashoffset:65;animation:EVoYIwfV_draw 1333ms ease-in-out 333ms forwards;}.EVoYIwfV_13{stroke-dasharray:36 38;stroke-dashoffset:37;animation:EVoYIwfV_draw 1333ms ease-in-out 361ms forwards;}.EVoYIwfV_14{stroke-dasharray:45 47;stroke-dashoffset:46;animation:EVoYIwfV_draw 1333ms ease-in-out 388ms forwards;}.EVoYIwfV_15{stroke-dasharray:48 50;stroke-dashoffset:49;animation:EVoYIwfV_draw 1333ms ease-in-out 416ms forwards;}.EVoYIwfV_16{stroke-dasharray:48 50;stroke-dashoffset:49;animation:EVoYIwfV_draw 1333ms ease-in-out 444ms forwards;}.EVoYIwfV_17{stroke-dasharray:48 50;stroke-dashoffset:49;animation:EVoYIwfV_draw 1333ms ease-in-out 472ms forwards;}.EVoYIwfV_18{stroke-dasharray:48 50;stroke-dashoffset:49;animation:EVoYIwfV_draw 1333ms ease-in-out 499ms forwards;}.EVoYIwfV_19{stroke-dasharray:48 50;stroke-dashoffset:49;animation:EVoYIwfV_draw 1333ms ease-in-out 527ms forwards;}.EVoYIwfV_20{stroke-dasharray:48 50;stroke-dashoffset:49;animation:EVoYIwfV_draw 1333ms ease-in-out 555ms forwards;}.EVoYIwfV_21{stroke-dasharray:19 21;stroke-dashoffset:20;animation:EVoYIwfV_draw 1333ms ease-in-out 583ms forwards;}.EVoYIwfV_22{stroke-dasharray:19 21;stroke-dashoffset:20;animation:EVoYIwfV_draw 1333ms ease-in-out 611ms forwards;}.EVoYIwfV_23{stroke-dasharray:19 21;stroke-dashoffset:20;animation:EVoYIwfV_draw 1333ms ease-in-out 638ms forwards;}.EVoYIwfV_24{stroke-dasharray:19 21;stroke-dashoffset:20;animation:EVoYIwfV_draw 1333ms ease-in-out 666ms forwards;}@keyframes EVoYIwfV_draw{100%{stroke-dashoffset:0;}}@keyframes EVoYIwfV_fade{0%{stroke-opacity:1;}93.54838709677419%{stroke-opacity:1;}100%{stroke-opacity:0;}}</style>')
+                        .append("image")
+                        .attr("x", '5.5%')
+                        .attr("y", '-10%')
+                        .attr("width", '93%')
+                        .attr("height", '100%')
+                        .attr("xlink:href", './img/1999-1.jpg');
+                    p6Rect.append('rect').attr('width', '64%').attr('height', '30px').attr('y', '37%').attr('x', '19.2%').attr('fill', '#808080').attr('opacity', '0.8')
+                    p6Rect.append('text').attr('width', '64%').attr('height', '30px').attr('y', '43%').attr('x', '21%').attr('fill', '#fff').attr('font-size', '1.1rem').html('枭龙飞机成功首飞（2003）')
+                }
+            } else {
+                $('.p6').css('opacity', '0')
+                $('#rect6').css('opacity', '0')
+            }
+            if ($(window).scrollTop() >= window.innerHeight * 8.2 && $(window).scrollTop() <= window.innerHeight * 8.8) {
+                $('.p7').css('opacity', '1')
+                $('#rect7').css('opacity', '1')
+                if ($('.p7').hasClass('p7svg')) {
+
+                } else {
+                    p7Rect.append("svg").attr('class', 'p7svg').attr('width', window.innerWidth).attr('height', window.innerWidth / 2).attr('position', 'absolute').attr('left', '0').attr('top', '-20%').attr('viewBox', "0 0 524 389.84").html('<defs><style>.cls-1,.cls-2{fill:none;}.cls-1{stroke:#fff;stroke-miterlimit:10;}.cls-3{fill:#fff;}</style></defs><title>a</title><path class="cls-1 EVoYIwfV_0" d="M141.5,0.5L398.5,0.5"></path><path class="cls-1 EVoYIwfV_1" d="M24.5,100.05L24.5,8.5L112.05,8.5"></path><path class="cls-1 EVoYIwfV_2" d="M109.82,305.5L24.5,305.5L24.5,239.59"></path><path class="cls-1 EVoYIwfV_3" d="M520.5,265.26L520.5,305.5L432.43,305.5"></path><path class="cls-1 EVoYIwfV_4" d="M520.5,175.4L520.5,239.59"></path><path class="cls-1 EVoYIwfV_5" d="M429.08,8.5L520.5,8.5L520.5,111.77"></path><path class="cls-1 EVoYIwfV_6" d="M143,310.5L398.5,308.5"></path><path class="cls-1 EVoYIwfV_7" d="M443.5,389.5L520.5,305.5"></path><path class="cls-2 EVoYIwfV_8" d="M17.5,295.5L17.5,228.5"></path><path class="cls-3 EVoYIwfV_9" d="M26,230.5v3H15v-3H26m1-1H14v5H27v-5Z" transform="translate(0 -55)"></path><path class="cls-3 EVoYIwfV_10" width="19.78" height="5" d="M7.22 182.2 L27 182.2 L27 187.2 L7.22 187.2 Z"></path><path class="cls-3 EVoYIwfV_11" width="17.49" height="5" d="M9.51 189.9 L27 189.9 L27 194.9 L9.51 194.9 Z"></path><path class="cls-3 EVoYIwfV_12" width="27" height="5" d="M0 197.6 L27 197.6 L27 202.6 L0 202.6 Z"></path><path class="cls-3 EVoYIwfV_13" width="13" height="5" d="M14 205.3 L27 205.3 L27 210.3 L14 210.3 Z"></path><path class="cls-3 EVoYIwfV_14" width="17.49" height="5" d="M9.51 213 L27 213 L27 218 L9.51 218 Z"></path><path class="cls-3 EVoYIwfV_15" d="M162,315L144.51,315L140.51,310L158,310L162,315Z"></path><path class="cls-3 EVoYIwfV_16" d="M381.51,313L399,313L403,308L385.51,308L381.51,313Z"></path><path class="cls-3 EVoYIwfV_17" d="M515,116.25L515,98.75L520,94.75L520,112.25L515,116.25Z"></path><path class="cls-3 EVoYIwfV_18" d="M402.25,6L384.75,6L380.75,1L398.25,1L402.25,6Z"></path><path class="cls-3 EVoYIwfV_19" d="M137.75,6L155.25,6L159.25,1L141.75,1L137.75,6Z"></path><path class="cls-3 EVoYIwfV_20" d="M30,104.25L30,86.75L25,82.75L25,100.25L30,104.25Z"></path><path class="cls-3 EVoYIwfV_21" width="6" height="6" d="M 25,6 L 25,6 A 3,3,0,0,1,28,9 L 28,9 A 3,3,0,0,1,25,12 L 25,12 A 3,3,0,0,1,22,9 L 22,9 A 3,3,0,0,1,25,6"></path><path class="cls-3 EVoYIwfV_22" width="6" height="6" d="M 521,238 L 521,238 A 3,3,0,0,1,524,241 L 524,241 A 3,3,0,0,1,521,244 L 521,244 A 3,3,0,0,1,518,241 L 518,241 A 3,3,0,0,1,521,238"></path><path class="cls-3 EVoYIwfV_23" width="6" height="6" d="M 521,261 L 521,261 A 3,3,0,0,1,524,264 L 524,264 A 3,3,0,0,1,521,267 L 521,267 A 3,3,0,0,1,518,264 L 518,264 A 3,3,0,0,1,521,261"></path><path class="cls-3 EVoYIwfV_24" width="6" height="6" d="M 520,303 L 520,303 A 3,3,0,0,1,523,306 L 523,306 A 3,3,0,0,1,520,309 L 520,309 A 3,3,0,0,1,517,306 L 517,306 A 3,3,0,0,1,520,303"></path><style data-made-with="vivus-instant">.EVoYIwfV_0{stroke-dasharray:257 259;stroke-dashoffset:258;animation:EVoYIwfV_draw 1333ms ease-in-out 0ms forwards;}.EVoYIwfV_1{stroke-dasharray:180 182;stroke-dashoffset:181;animation:EVoYIwfV_draw 1333ms ease-in-out 27ms forwards;}.EVoYIwfV_2{stroke-dasharray:152 154;stroke-dashoffset:153;animation:EVoYIwfV_draw 1333ms ease-in-out 55ms forwards;}.EVoYIwfV_3{stroke-dasharray:129 131;stroke-dashoffset:130;animation:EVoYIwfV_draw 1333ms ease-in-out 83ms forwards;}.EVoYIwfV_4{stroke-dasharray:65 67;stroke-dashoffset:66;animation:EVoYIwfV_draw 1333ms ease-in-out 111ms forwards;}.EVoYIwfV_5{stroke-dasharray:195 197;stroke-dashoffset:196;animation:EVoYIwfV_draw 1333ms ease-in-out 138ms forwards;}.EVoYIwfV_6{stroke-dasharray:256 258;stroke-dashoffset:257;animation:EVoYIwfV_draw 1333ms ease-in-out 166ms forwards;}.EVoYIwfV_7{stroke-dasharray:114 116;stroke-dashoffset:115;animation:EVoYIwfV_draw 1333ms ease-in-out 194ms forwards;}.EVoYIwfV_8{stroke-dasharray:67 69;stroke-dashoffset:68;animation:EVoYIwfV_draw 1333ms ease-in-out 222ms forwards;}.EVoYIwfV_9{stroke-dasharray:64 66;stroke-dashoffset:65;animation:EVoYIwfV_draw 1333ms ease-in-out 249ms forwards;}.EVoYIwfV_10{stroke-dasharray:50 52;stroke-dashoffset:51;animation:EVoYIwfV_draw 1333ms ease-in-out 277ms forwards;}.EVoYIwfV_11{stroke-dasharray:45 47;stroke-dashoffset:46;animation:EVoYIwfV_draw 1333ms ease-in-out 305ms forwards;}.EVoYIwfV_12{stroke-dasharray:64 66;stroke-dashoffset:65;animation:EVoYIwfV_draw 1333ms ease-in-out 333ms forwards;}.EVoYIwfV_13{stroke-dasharray:36 38;stroke-dashoffset:37;animation:EVoYIwfV_draw 1333ms ease-in-out 361ms forwards;}.EVoYIwfV_14{stroke-dasharray:45 47;stroke-dashoffset:46;animation:EVoYIwfV_draw 1333ms ease-in-out 388ms forwards;}.EVoYIwfV_15{stroke-dasharray:48 50;stroke-dashoffset:49;animation:EVoYIwfV_draw 1333ms ease-in-out 416ms forwards;}.EVoYIwfV_16{stroke-dasharray:48 50;stroke-dashoffset:49;animation:EVoYIwfV_draw 1333ms ease-in-out 444ms forwards;}.EVoYIwfV_17{stroke-dasharray:48 50;stroke-dashoffset:49;animation:EVoYIwfV_draw 1333ms ease-in-out 472ms forwards;}.EVoYIwfV_18{stroke-dasharray:48 50;stroke-dashoffset:49;animation:EVoYIwfV_draw 1333ms ease-in-out 499ms forwards;}.EVoYIwfV_19{stroke-dasharray:48 50;stroke-dashoffset:49;animation:EVoYIwfV_draw 1333ms ease-in-out 527ms forwards;}.EVoYIwfV_20{stroke-dasharray:48 50;stroke-dashoffset:49;animation:EVoYIwfV_draw 1333ms ease-in-out 555ms forwards;}.EVoYIwfV_21{stroke-dasharray:19 21;stroke-dashoffset:20;animation:EVoYIwfV_draw 1333ms ease-in-out 583ms forwards;}.EVoYIwfV_22{stroke-dasharray:19 21;stroke-dashoffset:20;animation:EVoYIwfV_draw 1333ms ease-in-out 611ms forwards;}.EVoYIwfV_23{stroke-dasharray:19 21;stroke-dashoffset:20;animation:EVoYIwfV_draw 1333ms ease-in-out 638ms forwards;}.EVoYIwfV_24{stroke-dasharray:19 21;stroke-dashoffset:20;animation:EVoYIwfV_draw 1333ms ease-in-out 666ms forwards;}@keyframes EVoYIwfV_draw{100%{stroke-dashoffset:0;}}@keyframes EVoYIwfV_fade{0%{stroke-opacity:1;}93.54838709677419%{stroke-opacity:1;}100%{stroke-opacity:0;}}</style>')
+                        .append("image")
+                        .attr("x", '5.5%')
+                        .attr("y", '-10%')
+                        .attr("width", '93%')
+                        .attr("height", '82%')
+                        .attr("xlink:href", './img/2009-1.jpg');
+                    p7Rect.append('rect').attr('width', '64%').attr('height', '30px').attr('y', '37%').attr('x', '19.2%').attr('fill', '#808080').attr('opacity', '0.8')
+                    p7Rect.append('text').attr('width', '64%').attr('height', '30px').attr('y', '43%').attr('x', '21%').attr('fill', '#fff').attr('font-size', '1.1rem').html('C919大飞机首架机头下线（2013）')
+                }
+            } else {
+                $('.p7').css('opacity', '0')
+                $('#rect7').css('opacity', '0')
+            }
+            if ($(window).scrollTop() >= window.innerHeight * 9.2 && $(window).scrollTop() <= window.innerHeight * 9.8) {
+                $('.p8').css('opacity', '1')
+                $(".down").css('opacity', '1')
+                $(".updown").css("bottom", "150px")
+                $('#rect8').css('opacity', '1')
+                if ($('.p8').hasClass('p8svg')) {
+
+                } else {
+                    p8Rect.append("svg").attr('class', 'p8svg').attr('width', window.innerWidth).attr('height', window.innerWidth / 2).attr('position', 'absolute').attr('left', '0').attr('top', '-20%').attr('viewBox', "0 0 524 389.84").html('<defs><style>.cls-1,.cls-2{fill:none;}.cls-1{stroke:#fff;stroke-miterlimit:10;}.cls-3{fill:#fff;}</style></defs><title>a</title><path class="cls-1 EVoYIwfV_0" d="M141.5,0.5L398.5,0.5"></path><path class="cls-1 EVoYIwfV_1" d="M24.5,100.05L24.5,8.5L112.05,8.5"></path><path class="cls-1 EVoYIwfV_2" d="M109.82,305.5L24.5,305.5L24.5,239.59"></path><path class="cls-1 EVoYIwfV_3" d="M520.5,265.26L520.5,305.5L432.43,305.5"></path><path class="cls-1 EVoYIwfV_4" d="M520.5,175.4L520.5,239.59"></path><path class="cls-1 EVoYIwfV_5" d="M429.08,8.5L520.5,8.5L520.5,111.77"></path><path class="cls-1 EVoYIwfV_6" d="M143,310.5L398.5,308.5"></path><path class="cls-1 EVoYIwfV_7" d="M443.5,389.5L520.5,305.5"></path><path class="cls-2 EVoYIwfV_8" d="M17.5,295.5L17.5,228.5"></path><path class="cls-3 EVoYIwfV_9" d="M26,230.5v3H15v-3H26m1-1H14v5H27v-5Z" transform="translate(0 -55)"></path><path class="cls-3 EVoYIwfV_10" width="19.78" height="5" d="M7.22 182.2 L27 182.2 L27 187.2 L7.22 187.2 Z"></path><path class="cls-3 EVoYIwfV_11" width="17.49" height="5" d="M9.51 189.9 L27 189.9 L27 194.9 L9.51 194.9 Z"></path><path class="cls-3 EVoYIwfV_12" width="27" height="5" d="M0 197.6 L27 197.6 L27 202.6 L0 202.6 Z"></path><path class="cls-3 EVoYIwfV_13" width="13" height="5" d="M14 205.3 L27 205.3 L27 210.3 L14 210.3 Z"></path><path class="cls-3 EVoYIwfV_14" width="17.49" height="5" d="M9.51 213 L27 213 L27 218 L9.51 218 Z"></path><path class="cls-3 EVoYIwfV_15" d="M162,315L144.51,315L140.51,310L158,310L162,315Z"></path><path class="cls-3 EVoYIwfV_16" d="M381.51,313L399,313L403,308L385.51,308L381.51,313Z"></path><path class="cls-3 EVoYIwfV_17" d="M515,116.25L515,98.75L520,94.75L520,112.25L515,116.25Z"></path><path class="cls-3 EVoYIwfV_18" d="M402.25,6L384.75,6L380.75,1L398.25,1L402.25,6Z"></path><path class="cls-3 EVoYIwfV_19" d="M137.75,6L155.25,6L159.25,1L141.75,1L137.75,6Z"></path><path class="cls-3 EVoYIwfV_20" d="M30,104.25L30,86.75L25,82.75L25,100.25L30,104.25Z"></path><path class="cls-3 EVoYIwfV_21" width="6" height="6" d="M 25,6 L 25,6 A 3,3,0,0,1,28,9 L 28,9 A 3,3,0,0,1,25,12 L 25,12 A 3,3,0,0,1,22,9 L 22,9 A 3,3,0,0,1,25,6"></path><path class="cls-3 EVoYIwfV_22" width="6" height="6" d="M 521,238 L 521,238 A 3,3,0,0,1,524,241 L 524,241 A 3,3,0,0,1,521,244 L 521,244 A 3,3,0,0,1,518,241 L 518,241 A 3,3,0,0,1,521,238"></path><path class="cls-3 EVoYIwfV_23" width="6" height="6" d="M 521,261 L 521,261 A 3,3,0,0,1,524,264 L 524,264 A 3,3,0,0,1,521,267 L 521,267 A 3,3,0,0,1,518,264 L 518,264 A 3,3,0,0,1,521,261"></path><path class="cls-3 EVoYIwfV_24" width="6" height="6" d="M 520,303 L 520,303 A 3,3,0,0,1,523,306 L 523,306 A 3,3,0,0,1,520,309 L 520,309 A 3,3,0,0,1,517,306 L 517,306 A 3,3,0,0,1,520,303"></path><style data-made-with="vivus-instant">.EVoYIwfV_0{stroke-dasharray:257 259;stroke-dashoffset:258;animation:EVoYIwfV_draw 1333ms ease-in-out 0ms forwards;}.EVoYIwfV_1{stroke-dasharray:180 182;stroke-dashoffset:181;animation:EVoYIwfV_draw 1333ms ease-in-out 27ms forwards;}.EVoYIwfV_2{stroke-dasharray:152 154;stroke-dashoffset:153;animation:EVoYIwfV_draw 1333ms ease-in-out 55ms forwards;}.EVoYIwfV_3{stroke-dasharray:129 131;stroke-dashoffset:130;animation:EVoYIwfV_draw 1333ms ease-in-out 83ms forwards;}.EVoYIwfV_4{stroke-dasharray:65 67;stroke-dashoffset:66;animation:EVoYIwfV_draw 1333ms ease-in-out 111ms forwards;}.EVoYIwfV_5{stroke-dasharray:195 197;stroke-dashoffset:196;animation:EVoYIwfV_draw 1333ms ease-in-out 138ms forwards;}.EVoYIwfV_6{stroke-dasharray:256 258;stroke-dashoffset:257;animation:EVoYIwfV_draw 1333ms ease-in-out 166ms forwards;}.EVoYIwfV_7{stroke-dasharray:114 116;stroke-dashoffset:115;animation:EVoYIwfV_draw 1333ms ease-in-out 194ms forwards;}.EVoYIwfV_8{stroke-dasharray:67 69;stroke-dashoffset:68;animation:EVoYIwfV_draw 1333ms ease-in-out 222ms forwards;}.EVoYIwfV_9{stroke-dasharray:64 66;stroke-dashoffset:65;animation:EVoYIwfV_draw 1333ms ease-in-out 249ms forwards;}.EVoYIwfV_10{stroke-dasharray:50 52;stroke-dashoffset:51;animation:EVoYIwfV_draw 1333ms ease-in-out 277ms forwards;}.EVoYIwfV_11{stroke-dasharray:45 47;stroke-dashoffset:46;animation:EVoYIwfV_draw 1333ms ease-in-out 305ms forwards;}.EVoYIwfV_12{stroke-dasharray:64 66;stroke-dashoffset:65;animation:EVoYIwfV_draw 1333ms ease-in-out 333ms forwards;}.EVoYIwfV_13{stroke-dasharray:36 38;stroke-dashoffset:37;animation:EVoYIwfV_draw 1333ms ease-in-out 361ms forwards;}.EVoYIwfV_14{stroke-dasharray:45 47;stroke-dashoffset:46;animation:EVoYIwfV_draw 1333ms ease-in-out 388ms forwards;}.EVoYIwfV_15{stroke-dasharray:48 50;stroke-dashoffset:49;animation:EVoYIwfV_draw 1333ms ease-in-out 416ms forwards;}.EVoYIwfV_16{stroke-dasharray:48 50;stroke-dashoffset:49;animation:EVoYIwfV_draw 1333ms ease-in-out 444ms forwards;}.EVoYIwfV_17{stroke-dasharray:48 50;stroke-dashoffset:49;animation:EVoYIwfV_draw 1333ms ease-in-out 472ms forwards;}.EVoYIwfV_18{stroke-dasharray:48 50;stroke-dashoffset:49;animation:EVoYIwfV_draw 1333ms ease-in-out 499ms forwards;}.EVoYIwfV_19{stroke-dasharray:48 50;stroke-dashoffset:49;animation:EVoYIwfV_draw 1333ms ease-in-out 527ms forwards;}.EVoYIwfV_20{stroke-dasharray:48 50;stroke-dashoffset:49;animation:EVoYIwfV_draw 1333ms ease-in-out 555ms forwards;}.EVoYIwfV_21{stroke-dasharray:19 21;stroke-dashoffset:20;animation:EVoYIwfV_draw 1333ms ease-in-out 583ms forwards;}.EVoYIwfV_22{stroke-dasharray:19 21;stroke-dashoffset:20;animation:EVoYIwfV_draw 1333ms ease-in-out 611ms forwards;}.EVoYIwfV_23{stroke-dasharray:19 21;stroke-dashoffset:20;animation:EVoYIwfV_draw 1333ms ease-in-out 638ms forwards;}.EVoYIwfV_24{stroke-dasharray:19 21;stroke-dashoffset:20;animation:EVoYIwfV_draw 1333ms ease-in-out 666ms forwards;}@keyframes EVoYIwfV_draw{100%{stroke-dashoffset:0;}}@keyframes EVoYIwfV_fade{0%{stroke-opacity:1;}93.54838709677419%{stroke-opacity:1;}100%{stroke-opacity:0;}}</style>')
+                        .append("image")
+                        .attr("x", '5.5%')
+                        .attr("y", '-10%')
+                        .attr("width", '93%')
+                        .attr("height", '82%')
+                        .attr("xlink:href", './img/2019-1.jpg');
+                    p8Rect.append('rect').attr('width', '64%').attr('height', '30px').attr('y', '37%').attr('x', '19.2%').attr('fill', '#808080').attr('opacity', '0.8')
+                    p8Rect.append('text').attr('width', '64%').attr('height', '30px').attr('y', '43%').attr('x', '21%').attr('fill', '#fff').attr('font-size', '1.1rem').html('京东方AMOLED柔性显示屏下线（2018）')
+                }
+            } else {
+                $('.p8').css('opacity', '0')
+                $(".down").css('opacity', '0')
+                $(".updown").css("bottom", "0")
+                $('#rect8').css('opacity', '0')
+            }
+
+        });
+    </script>
+</body>
+
+</html>
