@@ -1,25 +1,3 @@
-let firstRect = d3.select('#first_rects').append("svg").attr('width', '100%').attr('height', window.innerHeight / 2)
-
-firstRect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('fill', '#fff').attr('x', '70%').attr('y', '2%').attr('class', 'rect')
-firstRect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('fill', '#fff').attr('x', '60%').attr('y', '4%').attr('class', 'rect')
-firstRect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('fill', '#fff').attr('x', '80%').attr('y', '5%').attr('class', 'rect')
-firstRect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('fill', '#fff').attr('x', '90%').attr('y', '8%').attr('class', 'rect')
-firstRect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('fill', '#fff').attr('x', '30%').attr('y', '15%').attr('class', 'rect')
-firstRect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('fill', '#fff').attr('x', '40%').attr('y', '20%').attr('class', 'rect')
-firstRect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('fill', '#fff').attr('x', '68%').attr('y', '50%').attr('class', 'rect')
-firstRect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('fill', '#fff').attr('x', '78%').attr('y', '48%').attr('class', 'rect')
-firstRect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('fill', '#fff').attr('x', '20%').attr('y', '78%').attr('class', 'rect')
-firstRect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('fill', '#fff').attr('x', '41%').attr('y', '88%').attr('class', 'rect')
-
-firstRect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('stroke-width', '1').attr('stroke', '#fff').attr('x', '21%').attr('y', '12%').attr('class', 'rect')
-firstRect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('stroke-width', '1').attr('stroke', '#fff').attr('x', '60%').attr('y', '46%').attr('class', 'rect')
-firstRect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('stroke-width', '1').attr('stroke', '#fff').attr('x', '80%').attr('y', '20%').attr('class', 'rect')
-firstRect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('stroke-width', '1').attr('stroke', '#fff').attr('x', '40%').attr('y', '34%').attr('class', 'rect')
-firstRect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('stroke-width', '1').attr('stroke', '#fff').attr('x', '25%').attr('y', '50%').attr('class', 'rect')
-firstRect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('stroke-width', '1').attr('stroke', '#fff').attr('x', '50%').attr('y', '60%').attr('class', 'rect')
-firstRect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('stroke-width', '1').attr('stroke', '#fff').attr('x', '60%').attr('y', '70%').attr('class', 'rect')
-firstRect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('stroke-width', '1').attr('stroke', '#fff').attr('x', '7%').attr('y', '92%').attr('class', 'rect')
-
 let lastRect = d3.select('#last_rects').append("svg").attr('width', '100%').attr('height', 0).attr('opacity', '1')
 
 lastRect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('fill', '#fff').attr('x', '70%').attr('y', '2%').attr('class', 'rect')
@@ -42,7 +20,34 @@ lastRect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('strok
 lastRect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('stroke-width', '1').attr('stroke', '#fff').attr('x', '60%').attr('y', '70%').attr('class', 'rect')
 lastRect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('stroke-width', '1').attr('stroke', '#fff').attr('x', '7%').attr('y', '92%').attr('class', 'rect')
 
+let firstRect = function() {
 
+    $('#first_rects').append('<div class="rects1" style="top:120vh;left:70vw"></div>')
+    $('#first_rects').append('<div class="rects1" style="top:130vh;left:60vw"></div>')
+    $('#first_rects').append('<div class="rects1" style="top:125vh;left:80vw"></div>')
+    $('#first_rects').append('<div class="rects1" style="top:140vh;left:90vw"></div>')
+    $('#first_rects').append('<div class="rects1" style="top:150vh;left:30vw"></div>')
+    $('#first_rects').append('<div class="rects1" style="top:160vh;left:40vw"></div>')
+    $('#first_rects').append('<div class="rects1" style="top:170vh;left:68vw"></div>')
+    $('#first_rects').append('<div class="rects1" style="top:140vh;left:78vw"></div>')
+    $('#first_rects').append('<div class="rects1" style="top:160vh;left:20vw"></div>')
+    $('#first_rects').append('<div class="rects1" style="top:130vh;left:41vw"></div>')
+
+    $('#first_rects').append('<div class="rects2" style="top:120vh;left:21vw"></div>')
+    $('#first_rects').append('<div class="rects2" style="top:122vh;left:60vw"></div>')
+    $('#first_rects').append('<div class="rects2" style="top:130vh;left:80vw"></div>')
+    $('#first_rects').append('<div class="rects2" style="top:140vh;left:40vw"></div>')
+    $('#first_rects').append('<div class="rects2" style="top:150vh;left:25vw"></div>')
+    $('#first_rects').append('<div class="rects2" style="top:160vh;left:50vw"></div>')
+    $('#first_rects').append('<div class="rects2" style="top:140vh;left:60vw"></div>')
+    $('#first_rects').append('<div class="rects2" style="top:130vh;left:7vw"></div>')
+}()
+
+// let firstRectAnimate = function(top) {
+//     $('#first_rects div').each(function(d, i) {
+//         $(this)[0].style.top = top + 'px';
+//     });
+// }
 
 
 let p1Rect = d3.select('#rect1').append("svg").attr('width', '100%').attr('height', '100%').attr('position', 'absolute').attr('left', '0').attr('top', '0')
@@ -54,10 +59,6 @@ let p6Rect = d3.select('#rect6').append("svg").attr('width', '100%').attr('heigh
 let p7Rect = d3.select('#rect7').append("svg").attr('width', '100%').attr('height', '100%').attr('position', 'absolute').attr('left', '0').attr('top', '0')
 let p8Rect = d3.select('#rect8').append("svg").attr('width', '100%').attr('height', '100%').attr('position', 'absolute').attr('left', '0').attr('top', '0')
 
-p1Rect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('fill', '#fff').attr('x', '34%').attr('y', '63%')
-p1Rect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('fill', '#fff').attr('x', '32%').attr('y', '75%')
-p1Rect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('fill', '#fff').attr('x', '60%').attr('y', '80%')
-p1Rect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('stroke-width', '1').attr('stroke', '#fff').attr('x', '63%').attr('y', '64%').attr('class', 'rect')
 
 p2Rect.append('rect').attr('width', '2rem').attr('height', '2rem').attr('fill', '#fff').attr('x', '34%').attr('y', '57%').on('click', function() {
     $('.p2 .history').html('一五、二五国家布局的三大电子信息基地之一')
@@ -317,3 +318,18 @@ mapRect.append('rect').attr('width', mapwitdh).attr('height', mapwitdh).attr('st
 mapRect.append('rect').attr('width', mapwitdh).attr('height', mapwitdh).attr('stroke-width', '1').attr('stroke', '#fff').attr('x', '50%').attr('y', '60%').attr('class', 'rect')
 mapRect.append('rect').attr('width', mapwitdh).attr('height', mapwitdh).attr('stroke-width', '1').attr('stroke', '#fff').attr('x', '60%').attr('y', '70%').attr('class', 'rect')
 mapRect.append('rect').attr('width', mapwitdh).attr('height', mapwitdh).attr('stroke-width', '1').attr('stroke', '#fff').attr('x', '7%').attr('y', '52%').attr('class', 'rect')
+
+
+let r1First = true
+let appenRect1 = function(type) {
+    if (!r1First) return
+    r1First = !r1First
+    let a = p1Rect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('fill', '#fff').attr('x', '34%').attr('y', '63%').attr('opacity', '0')
+    let b = p1Rect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('fill', '#fff').attr('x', '32%').attr('y', '75%').attr('opacity', '0')
+    let c = p1Rect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('fill', '#fff').attr('x', '60%').attr('y', '80%').attr('opacity', '0')
+    let d = p1Rect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('stroke-width', '1').attr('stroke', '#fff').attr('x', '63%').attr('y', '64%').attr('class', 'rect').attr('opacity', '0')
+    a.transition().attr('opacity', '1').duration(1000).delay(400)
+    b.transition().attr('opacity', '1').duration(1000).delay(500)
+    c.transition().attr('opacity', '1').duration(1000).delay(600)
+    d.transition().attr('opacity', '1').duration(1000).delay(700)
+}

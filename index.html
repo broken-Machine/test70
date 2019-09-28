@@ -41,7 +41,7 @@
     <section id='scroll'>
         <div class='scroll__text'>
             <div class="bg-wrap" style=" width: 100%;height: 100vh;overflow: hidden;position: fixed;">
-                <div class="bg" style=" height:3912px; width:100%;position: absolute;top:0;background: url(./img/background.png) no-repeat 0 0/100% 100%;"></div>
+                <div class="bg" style=" height:2483.5px; width:100%;position: absolute;top:0;background: url(./img/background.png) no-repeat 0 0/100% 100%;"></div>
             </div>
             <div class="step" data-step='fishMove' id="firstPage">
                 <div class="bgSticky" style="background-image: url('./img/firstPage.png')">
@@ -127,7 +127,7 @@
                 </div>
                 <div class="panel" style='opacity: 1;'>
                     <!-- <div id='mapRect' class='first_rects'></div> -->
-                    <div class='map' style="background-image: url(./img/map.png)">
+                    <div class='map' style="background-image: url(./img/map.svg)">
                         <div class='compass' style="background-image: url(./img/compass.png)"></div>
                         <div class='pointer' style="background-image: url(./img/pointer.png)"></div>
                     </div>
@@ -174,10 +174,11 @@
 
     <script>
         $(window).scroll(function() {
+            var rhombus_h = $('#rhombus').height()
             var h1 = $("#scroll").height() - window.innerHeight;
-            var h2 = (3912 - window.innerHeight) * $(window).scrollTop() / h1
+            var h2 = (2483.5 - window.innerHeight) * $(window).scrollTop() / h1
             $(".bg").css("top", -h2 + "px");
-            if ($(window).scrollTop() >= window.innerHeight * 2 - 149) {
+            if ($(window).scrollTop() >= window.innerHeight * 2 - rhombus_h) {
                 $(".rhombus div").css('position', 'fixed');
                 $(".rhombus div").css('top', '0');
                 $('.topBar').css('opacity', '1')
@@ -192,17 +193,18 @@
                 $('.leftSlider').css('opacity', '0')
                 $(".updown").css('opacity', '0')
             }
-            if ($(window).scrollTop() >= window.innerHeight * 10 - 149) {
+            if ($(window).scrollTop() >= window.innerHeight * 10 - rhombus_h) {
                 $(".rhombus div").css('position', 'absolute');
             }
-            if ($(window).scrollTop() >= window.innerHeight * 10 - 149) {
+            if ($(window).scrollTop() >= window.innerHeight * 10 - rhombus_h) {
                 $('.leftBar').css('opacity', '0')
                 $('.leftSlider').css('opacity', '0')
                 $('.updown').css('opacity', '0')
             }
 
-            if ($(window).scrollTop() >= window.innerHeight * 2) {
-                d3.select('#first_rects svg').transition().duration(2000).attr('height', '0').ease(d3.easeExpOut);
+            if ($(window).scrollTop() >= window.innerHeight) {
+                //firstRectAnimate($(window).scrollTop() - window.innerHeight);
+                // d3.select('#first_rects svg').transition().duration(2000).attr('height', '0').ease(d3.easeExpOut);
             } else {
                 d3.select('#first_rects svg').transition().duration(2000).attr('height', window.innerHeight / 2).ease(d3.easeExpOut);;
             }
@@ -218,28 +220,48 @@
 
             if ($(window).scrollTop() >= window.innerHeight * 2.2 && $(window).scrollTop() <= window.innerHeight * 2.8) {
                 $('.p1').css('opacity', '1')
-                $('#rect1').css('opacity', '1')
+                var toTop = $('.p1 .words').offset().top - $(window).scrollTop()
+                if (toTop < $(window).height() * .6) {
+                    appenRect1()
+                } else {
+                    //$('#rect1').css('opacity', '0')
+                }
             } else {
                 $('.p1').css('opacity', '0')
-                $('#rect1').css('opacity', '0')
+                    //$('#rect1').css('opacity', '0')
             }
             if ($(window).scrollTop() >= window.innerHeight * 3.2 && $(window).scrollTop() <= window.innerHeight * 3.8) {
                 $('.p2').css('opacity', '1')
-                $('#rect2').css('opacity', '1')
+                var toTop = $('.p2 .words').offset().top - $(window).scrollTop()
+                if (toTop < $(window).height() * .6) {
+                    $('#rect2').css('opacity', '1')
+                } else {
+                    $('#rect2').css('opacity', '0')
+                }
             } else {
                 $('.p2').css('opacity', '0')
                 $('#rect2').css('opacity', '0')
             }
             if ($(window).scrollTop() >= window.innerHeight * 4.2 && $(window).scrollTop() <= window.innerHeight * 4.8) {
                 $('.p3').css('opacity', '1')
-                $('#rect3').css('opacity', '1')
+                var toTop = $('.p3 .words').offset().top - $(window).scrollTop()
+                if (toTop < $(window).height() * .6) {
+                    $('#rect3').css('opacity', '1')
+                } else {
+                    $('#rect3').css('opacity', '0')
+                }
             } else {
                 $('.p3').css('opacity', '0')
                 $('#rect3').css('opacity', '0')
             }
             if ($(window).scrollTop() >= window.innerHeight * 5.2 && $(window).scrollTop() <= window.innerHeight * 5.8) {
                 $('.p4').css('opacity', '1')
-                $('#rect4').css('opacity', '1')
+                var toTop = $('.p4 .words').offset().top - $(window).scrollTop()
+                if (toTop < $(window).height() * .6) {
+                    $('#rect4').css('opacity', '1')
+                } else {
+                    $('#rect4').css('opacity', '0')
+                }
                 if ($('.p4').hasClass('p4svg')) {
 
                 } else {
@@ -260,7 +282,12 @@
             }
             if ($(window).scrollTop() >= window.innerHeight * 6.2 && $(window).scrollTop() <= window.innerHeight * 6.8) {
                 $('.p5').css('opacity', '1')
-                $('#rect5').css('opacity', '1')
+                var toTop = $('.p5 .words').offset().top - $(window).scrollTop()
+                if (toTop < $(window).height() * .6) {
+                    $('#rect5').css('opacity', '1')
+                } else {
+                    $('#rect5').css('opacity', '0')
+                }
                 if ($('.p5').hasClass('p5svg')) {
 
                 } else {
@@ -280,7 +307,12 @@
             }
             if ($(window).scrollTop() >= window.innerHeight * 7.2 && $(window).scrollTop() <= window.innerHeight * 7.8) {
                 $('.p6').css('opacity', '1')
-                $('#rect6').css('opacity', '1')
+                var toTop = $('.p6 .words').offset().top - $(window).scrollTop()
+                if (toTop < $(window).height() * .6) {
+                    $('#rect6').css('opacity', '1')
+                } else {
+                    $('#rect6').css('opacity', '0')
+                }
                 if ($('.p6').hasClass('p6svg')) {
 
                 } else {
@@ -300,7 +332,12 @@
             }
             if ($(window).scrollTop() >= window.innerHeight * 8.2 && $(window).scrollTop() <= window.innerHeight * 8.8) {
                 $('.p7').css('opacity', '1')
-                $('#rect7').css('opacity', '1')
+                var toTop = $('.p7 .words').offset().top - $(window).scrollTop()
+                if (toTop < $(window).height() * .6) {
+                    $('#rect7').css('opacity', '1')
+                } else {
+                    $('#rect7').css('opacity', '0')
+                }
                 if ($('.p7').hasClass('p7svg')) {
 
                 } else {
@@ -322,7 +359,12 @@
                 $('.p8').css('opacity', '1')
                 $(".down").css('opacity', '1')
                 $(".updown").css("bottom", "150px")
-                $('#rect8').css('opacity', '1')
+                var toTop = $('.p8 .words').offset().top - $(window).scrollTop()
+                if (toTop < $(window).height() * .6) {
+                    $('#rect8').css('opacity', '1')
+                } else {
+                    $('#rect8').css('opacity', '0')
+                }
                 if ($('.p8').hasClass('p8svg')) {
 
                 } else {
