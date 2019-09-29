@@ -160,7 +160,7 @@ body.canscroll {
     background-repeat: no-repeat;
     background-position: center center;
     opacity: 0;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 .step .panel .words {
@@ -552,8 +552,7 @@ body.canscroll {
     width: 1rem;
     height: 1rem;
     background: #fff;
-    transition: 1s;
-    -webkit-filter: blur(1px);
+    transition: 2s;
 }
 
 .rects2 {
@@ -561,5 +560,14 @@ body.canscroll {
     width: 1rem;
     height: 1rem;
     border: 1px solid #fff;
-    transition: 1s;
+    transition: 2s;
+}
+
+.rects {
+    width: 1rem;
+    height: 1rem;
+}
+
+.burl {
+    -webkit-filter: blur(3px);
 }

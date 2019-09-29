@@ -1,53 +1,82 @@
-let lastRect = d3.select('#last_rects').append("svg").attr('width', '100%').attr('height', 0).attr('opacity', '1')
+// let lastRect = d3.select('#last_rects').append("svg").attr('width', '100%').attr('height', 0).attr('opacity', '1')
 
-lastRect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('fill', '#fff').attr('x', '70%').attr('y', '2%').attr('class', 'rect')
-lastRect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('fill', '#fff').attr('x', '60%').attr('y', '4%').attr('class', 'rect')
-lastRect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('fill', '#fff').attr('x', '80%').attr('y', '5%').attr('class', 'rect')
-lastRect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('fill', '#fff').attr('x', '90%').attr('y', '8%').attr('class', 'rect')
-lastRect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('fill', '#fff').attr('x', '30%').attr('y', '15%').attr('class', 'rect')
-lastRect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('fill', '#fff').attr('x', '40%').attr('y', '20%').attr('class', 'rect')
-lastRect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('fill', '#fff').attr('x', '68%').attr('y', '50%').attr('class', 'rect')
-lastRect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('fill', '#fff').attr('x', '78%').attr('y', '48%').attr('class', 'rect')
-lastRect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('fill', '#fff').attr('x', '20%').attr('y', '78%').attr('class', 'rect')
-lastRect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('fill', '#fff').attr('x', '41%').attr('y', '88%').attr('class', 'rect')
+// lastRect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('fill', '#fff').attr('x', '70%').attr('y', '2%').attr('opacity', '0')
+// lastRect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('fill', '#fff').attr('x', '60%').attr('y', '4%').attr('opacity', '0')
+// lastRect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('fill', '#fff').attr('x', '80%').attr('y', '5%').attr('opacity', '0')
+// lastRect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('fill', '#fff').attr('x', '90%').attr('y', '8%').attr('opacity', '0')
+// lastRect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('fill', '#fff').attr('x', '30%').attr('y', '15%').attr('opacity', '0')
+// lastRect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('fill', '#fff').attr('x', '40%').attr('y', '20%').attr('opacity', '0')
+// lastRect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('fill', '#fff').attr('x', '68%').attr('y', '50%').attr('opacity', '0')
+// lastRect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('fill', '#fff').attr('x', '78%').attr('y', '48%').attr('opacity', '0')
+// lastRect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('fill', '#fff').attr('x', '20%').attr('y', '78%').attr('opacity', '0')
+// lastRect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('fill', '#fff').attr('x', '41%').attr('y', '88%').attr('opacity', '0')
 
-lastRect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('stroke-width', '1').attr('stroke', '#fff').attr('x', '21%').attr('y', '12%').attr('class', 'rect')
-lastRect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('stroke-width', '1').attr('stroke', '#fff').attr('x', '60%').attr('y', '46%').attr('class', 'rect')
-lastRect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('stroke-width', '1').attr('stroke', '#fff').attr('x', '80%').attr('y', '20%').attr('class', 'rect')
-lastRect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('stroke-width', '1').attr('stroke', '#fff').attr('x', '40%').attr('y', '34%').attr('class', 'rect')
-lastRect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('stroke-width', '1').attr('stroke', '#fff').attr('x', '25%').attr('y', '50%').attr('class', 'rect')
-lastRect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('stroke-width', '1').attr('stroke', '#fff').attr('x', '50%').attr('y', '60%').attr('class', 'rect')
-lastRect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('stroke-width', '1').attr('stroke', '#fff').attr('x', '60%').attr('y', '70%').attr('class', 'rect')
-lastRect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('stroke-width', '1').attr('stroke', '#fff').attr('x', '7%').attr('y', '92%').attr('class', 'rect')
+// lastRect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('stroke-width', '1').attr('stroke', '#fff').attr('x', '21%').attr('y', '12%').attr('opacity', '0')
+// lastRect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('stroke-width', '1').attr('stroke', '#fff').attr('x', '60%').attr('y', '46%').attr('opacity', '0')
+// lastRect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('stroke-width', '1').attr('stroke', '#fff').attr('x', '80%').attr('y', '20%').attr('opacity', '0')
+// lastRect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('stroke-width', '1').attr('stroke', '#fff').attr('x', '40%').attr('y', '34%').attr('opacity', '0')
+// lastRect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('stroke-width', '1').attr('stroke', '#fff').attr('x', '25%').attr('y', '50%').attr('opacity', '0')
+// lastRect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('stroke-width', '1').attr('stroke', '#fff').attr('x', '50%').attr('y', '60%').attr('opacity', '0')
+// lastRect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('stroke-width', '1').attr('stroke', '#fff').attr('x', '60%').attr('y', '70%').attr('opacity', '0')
+// lastRect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('stroke-width', '1').attr('stroke', '#fff').attr('x', '7%').attr('y', '92%').attr('opacity', '0')
 
 let firstRect = function() {
 
-    $('#first_rects').append('<div class="rects1" style="top:120vh;left:70vw"></div>')
-    $('#first_rects').append('<div class="rects1" style="top:130vh;left:60vw"></div>')
-    $('#first_rects').append('<div class="rects1" style="top:125vh;left:80vw"></div>')
-    $('#first_rects').append('<div class="rects1" style="top:140vh;left:90vw"></div>')
-    $('#first_rects').append('<div class="rects1" style="top:150vh;left:30vw"></div>')
-    $('#first_rects').append('<div class="rects1" style="top:160vh;left:40vw"></div>')
-    $('#first_rects').append('<div class="rects1" style="top:170vh;left:68vw"></div>')
-    $('#first_rects').append('<div class="rects1" style="top:140vh;left:78vw"></div>')
-    $('#first_rects').append('<div class="rects1" style="top:160vh;left:20vw"></div>')
-    $('#first_rects').append('<div class="rects1" style="top:130vh;left:41vw"></div>')
+    $('#first_rects').append('<div class="rects rects1" style="top:103vh;left:70vw"></div>')
+    $('#first_rects').append('<div class="rects rects1" style="top:106vh;left:60vw"></div>')
+    $('#first_rects').append('<div class="rects rects1" style="top:118vh;left:20vw"></div>')
+    $('#first_rects').append('<div class="rects rects1" style="top:117vh;left:80vw"></div>')
+    $('#first_rects').append('<div class="rects rects1" style="top:122vh;left:90vw"></div>')
+    $('#first_rects').append('<div class="rects rects1" style="top:133vh;left:30vw"></div>')
+    $('#first_rects').append('<div class="rects rects1 burl" style="top:137vh;left:62vw"></div>')
+    $('#first_rects').append('<div class="rects rects1 burl" style="top:153vh;left:68vw"></div>')
+    $('#first_rects').append('<div class="rects rects1 burl" style="top:148vh;left:28vw"></div>')
+    $('#first_rects').append('<div class="rects rects1 burl" style="top:139vh;left:68vw"></div>')
+    $('#first_rects').append('<div class="rects rects1" style="top:129vh;left:78vw"></div>')
+    $('#first_rects').append('<div class="rects rects1 burl" style="top:141vh;left:20vw"></div>')
+    $('#first_rects').append('<div class="rects rects1" style="top:111vh;left:41vw"></div>')
 
-    $('#first_rects').append('<div class="rects2" style="top:120vh;left:21vw"></div>')
-    $('#first_rects').append('<div class="rects2" style="top:122vh;left:60vw"></div>')
-    $('#first_rects').append('<div class="rects2" style="top:130vh;left:80vw"></div>')
-    $('#first_rects').append('<div class="rects2" style="top:140vh;left:40vw"></div>')
-    $('#first_rects').append('<div class="rects2" style="top:150vh;left:25vw"></div>')
-    $('#first_rects').append('<div class="rects2" style="top:160vh;left:50vw"></div>')
-    $('#first_rects').append('<div class="rects2" style="top:140vh;left:60vw"></div>')
-    $('#first_rects').append('<div class="rects2" style="top:130vh;left:7vw"></div>')
+    $('#first_rects').append('<div class="rects rects2" style="top:110vh;left:21vw"></div>')
+    $('#first_rects').append('<div class="rects rects2" style="top:102vh;left:60vw"></div>')
+    $('#first_rects').append('<div class="rects rects2" style="top:111vh;left:80vw"></div>')
+    $('#first_rects').append('<div class="rects rects2" style="top:122vh;left:40vw"></div>')
+    $('#first_rects').append('<div class="rects rects2" style="top:131vh;left:25vw"></div>')
+    $('#first_rects').append('<div class="rects rects2 burl" style="top:149vh;left:50vw"></div>')
+    $('#first_rects').append('<div class="rects rects2" style="top:121vh;left:60vw"></div>')
+    $('#first_rects').append('<div class="rects rects2" style="top:112vh;left:7vw"></div>')
 }()
 
-// let firstRectAnimate = function(top) {
-//     $('#first_rects div').each(function(d, i) {
-//         $(this)[0].style.top = top + 'px';
-//     });
-// }
+let lastRect = function() {
+
+    $('#last_rects').append('<div class="rects rects1" style="top:923vh;left:70vw"></div>')
+    $('#last_rects').append('<div class="rects rects1" style="top:926vh;left:60vw"></div>')
+    $('#last_rects').append('<div class="rects rects1" style="top:938vh;left:20vw"></div>')
+    $('#last_rects').append('<div class="rects rects1" style="top:937vh;left:80vw"></div>')
+    $('#last_rects').append('<div class="rects rects1" style="top:952vh;left:90vw"></div>')
+    $('#last_rects').append('<div class="rects rects1" style="top:953vh;left:30vw"></div>')
+    $('#last_rects').append('<div class="rects rects1 burl" style="top:957vh;left:62vw"></div>')
+    $('#last_rects').append('<div class="rects rects1 burl" style="top:973vh;left:68vw"></div>')
+    $('#last_rects').append('<div class="rects rects1 burl" style="top:968vh;left:28vw"></div>')
+    $('#last_rects').append('<div class="rects rects1 burl" style="top:959vh;left:68vw"></div>')
+    $('#last_rects').append('<div class="rects rects1" style="top:949vh;left:78vw"></div>')
+    $('#last_rects').append('<div class="rects rects1 burl" style="top:961vh;left:20vw"></div>')
+    $('#last_rects').append('<div class="rects rects1" style="top:961vh;left:41vw"></div>')
+
+    $('#last_rects').append('<div class="rects rects2" style="top:960vh;left:21vw"></div>')
+    $('#last_rects').append('<div class="rects rects2" style="top:922vh;left:60vw"></div>')
+    $('#last_rects').append('<div class="rects rects2" style="top:931vh;left:80vw"></div>')
+    $('#last_rects').append('<div class="rects rects2" style="top:952vh;left:40vw"></div>')
+    $('#last_rects').append('<div class="rects rects2" style="top:951vh;left:25vw"></div>')
+    $('#last_rects').append('<div class="rects rects2 burl" style="top:969vh;left:50vw"></div>')
+    $('#last_rects').append('<div class="rects rects2" style="top:961vh;left:60vw"></div>')
+    $('#last_rects').append('<div class="rects rects2" style="top:932vh;left:7vw"></div>')
+}()
+
+let firstRectAnimate = function(top) {
+    $('#first_rects div').each(function(d, i) {
+        $(this)[0].style.top = top + 'px';
+    });
+}
 
 
 let p1Rect = d3.select('#rect1').append("svg").attr('width', '100%').attr('height', '100%').attr('position', 'absolute').attr('left', '0').attr('top', '0')
@@ -72,8 +101,8 @@ p2Rect.append('rect').attr('width', '2rem').attr('height', '2rem').attr('fill', 
 p2Rect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('stroke-width', '1').attr('stroke', '#fff').attr('x', '34%').attr('y', '69%')
 p2Rect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('fill', '#fff').attr('x', '32%').attr('y', '75%')
 p2Rect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('fill', '#fff').attr('x', '60%').attr('y', '75%')
-p2Rect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('stroke-width', '1').attr('stroke', '#fff').attr('x', '68%').attr('y', '65%').attr('class', 'rect')
-p2Rect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('stroke-width', '1').attr('stroke', '#fff').attr('x', '78%').attr('y', '80%').attr('class', 'rect')
+p2Rect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('stroke-width', '1').attr('stroke', '#fff').attr('x', '68%').attr('y', '65%').attr('opacity', '0')
+p2Rect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('stroke-width', '1').attr('stroke', '#fff').attr('x', '78%').attr('y', '80%').attr('opacity', '0')
 
 p3Rect.append('rect').attr('width', '2rem').attr('height', '2rem').attr('fill', '#fff').attr('x', '34%').attr('y', '57%').on('click', function() {
     $('.p3 .history').html('“三线”建设国家布局奠定现代工业发展基础')
@@ -90,8 +119,8 @@ p3Rect.append('rect').attr('width', '2rem').attr('height', '2rem').attr('fill', 
 p3Rect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('stroke-width', '1').attr('stroke', '#fff').attr('x', '34%').attr('y', '69%')
 p3Rect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('fill', '#fff').attr('x', '32%').attr('y', '75%')
 p3Rect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('fill', '#fff').attr('x', '60%').attr('y', '75%')
-p3Rect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('stroke-width', '1').attr('stroke', '#fff').attr('x', '68%').attr('y', '65%').attr('class', 'rect')
-p3Rect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('stroke-width', '1').attr('stroke', '#fff').attr('x', '78%').attr('y', '80%').attr('class', 'rect')
+p3Rect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('stroke-width', '1').attr('stroke', '#fff').attr('x', '68%').attr('y', '65%').attr('opacity', '0')
+p3Rect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('stroke-width', '1').attr('stroke', '#fff').attr('x', '78%').attr('y', '80%').attr('opacity', '0')
 
 
 p4Rect.append('rect').attr('width', '2rem').attr('height', '2rem').attr('fill', '#fff').attr('x', '34%').attr('y', '57%').on('click', function() {
@@ -111,8 +140,8 @@ p4Rect.append('rect').attr('width', '2rem').attr('height', '2rem').attr('fill', 
 p4Rect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('stroke-width', '1').attr('stroke', '#fff').attr('x', '34%').attr('y', '69%')
 p4Rect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('fill', '#fff').attr('x', '32%').attr('y', '75%')
 p4Rect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('fill', '#fff').attr('x', '60%').attr('y', '75%')
-p4Rect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('stroke-width', '1').attr('stroke', '#fff').attr('x', '68%').attr('y', '65%').attr('class', 'rect')
-p4Rect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('stroke-width', '1').attr('stroke', '#fff').attr('x', '78%').attr('y', '80%').attr('class', 'rect')
+p4Rect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('stroke-width', '1').attr('stroke', '#fff').attr('x', '68%').attr('y', '65%').attr('opacity', '0')
+p4Rect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('stroke-width', '1').attr('stroke', '#fff').attr('x', '78%').attr('y', '80%').attr('opacity', '0')
 
 
 p5Rect.append('rect').attr('width', '2rem').attr('height', '2rem').attr('fill', '#fff').attr('x', '34%').attr('y', '57%').on('click', function() {
@@ -135,8 +164,8 @@ p5Rect.append('rect').attr('width', '2rem').attr('height', '2rem').attr('fill', 
 p5Rect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('stroke-width', '1').attr('stroke', '#fff').attr('x', '34%').attr('y', '69%')
 p5Rect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('fill', '#fff').attr('x', '32%').attr('y', '75%')
 p5Rect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('fill', '#fff').attr('x', '60%').attr('y', '75%')
-p5Rect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('stroke-width', '1').attr('stroke', '#fff').attr('x', '68%').attr('y', '65%').attr('class', 'rect')
-p5Rect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('stroke-width', '1').attr('stroke', '#fff').attr('x', '78%').attr('y', '80%').attr('class', 'rect')
+p5Rect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('stroke-width', '1').attr('stroke', '#fff').attr('x', '68%').attr('y', '65%').attr('opacity', '0')
+p5Rect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('stroke-width', '1').attr('stroke', '#fff').attr('x', '78%').attr('y', '80%').attr('opacity', '0')
 
 
 
@@ -164,8 +193,8 @@ p6Rect.append('rect').attr('width', '2rem').attr('height', '2rem').attr('fill', 
 p6Rect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('stroke-width', '1').attr('stroke', '#fff').attr('x', '34%').attr('y', '69%')
 p6Rect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('fill', '#fff').attr('x', '32%').attr('y', '75%')
 p6Rect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('fill', '#fff').attr('x', '60%').attr('y', '75%')
-p6Rect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('stroke-width', '1').attr('stroke', '#fff').attr('x', '68%').attr('y', '65%').attr('class', 'rect')
-p6Rect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('stroke-width', '1').attr('stroke', '#fff').attr('x', '78%').attr('y', '80%').attr('class', 'rect')
+p6Rect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('stroke-width', '1').attr('stroke', '#fff').attr('x', '68%').attr('y', '65%').attr('opacity', '0')
+p6Rect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('stroke-width', '1').attr('stroke', '#fff').attr('x', '78%').attr('y', '80%').attr('opacity', '0')
 
 
 
@@ -197,10 +226,8 @@ p7Rect.append('rect').attr('width', '2rem').attr('height', '2rem').attr('fill', 
 p7Rect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('stroke-width', '1').attr('stroke', '#fff').attr('x', '34%').attr('y', '69%')
 p7Rect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('fill', '#fff').attr('x', '32%').attr('y', '75%')
 p7Rect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('fill', '#fff').attr('x', '60%').attr('y', '75%')
-p7Rect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('stroke-width', '1').attr('stroke', '#fff').attr('x', '68%').attr('y', '65%').attr('class', 'rect')
-p7Rect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('stroke-width', '1').attr('stroke', '#fff').attr('x', '78%').attr('y', '80%').attr('class', 'rect')
-
-
+p7Rect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('stroke-width', '1').attr('stroke', '#fff').attr('x', '68%').attr('y', '65%').attr('opacity', '0')
+p7Rect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('stroke-width', '1').attr('stroke', '#fff').attr('x', '78%').attr('y', '80%').attr('opacity', '0')
 
 
 p8Rect.append('rect').attr('width', '2rem').attr('height', '2rem').attr('fill', '#fff').attr('x', '34%').attr('y', '57%').on('click', function() {
@@ -238,98 +265,466 @@ p8Rect.append('rect').attr('width', '2rem').attr('height', '2rem').attr('fill', 
 p8Rect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('stroke-width', '1').attr('stroke', '#fff').attr('x', '34%').attr('y', '69%')
 p8Rect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('fill', '#fff').attr('x', '32%').attr('y', '75%')
 p8Rect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('fill', '#fff').attr('x', '60%').attr('y', '75%')
-p8Rect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('stroke-width', '1').attr('stroke', '#fff').attr('x', '68%').attr('y', '65%').attr('class', 'rect')
-p8Rect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('stroke-width', '1').attr('stroke', '#fff').attr('x', '78%').attr('y', '80%').attr('class', 'rect')
+p8Rect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('stroke-width', '1').attr('stroke', '#fff').attr('x', '68%').attr('y', '65%').attr('opacity', '0')
+p8Rect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('stroke-width', '1').attr('stroke', '#fff').attr('x', '78%').attr('y', '80%').attr('opacity', '0')
 
+p1Rect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('fill', '#fff').attr('x', '34%').attr('y', '63%').attr('opacity', '0')
+p1Rect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('fill', '#fff').attr('x', '32%').attr('y', '75%').attr('opacity', '0')
+p1Rect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('fill', '#fff').attr('x', '60%').attr('y', '80%').attr('opacity', '0')
+p1Rect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('stroke-width', '1').attr('stroke', '#fff').attr('x', '63%').attr('y', '64%').attr('opacity', '0').attr('opacity', '0')
+let annimateRect = function(dom, type, time) {
+    d3.selectAll(dom).transition().attr('opacity', type).duration(200).delay(function(d, i) {
+        return time * i
+    })
+}
 
+let fmOnece = true
+let firstRectMoveDown = function() {
+    if (!fmOnece) return
+    fmOnece = !fmOnece
+        // d3.select('#first_rects').transition().style('opacity', '1').duration(500)
+        // $('#first_rects div').each(function(d, i) {
+        //     $(this)[0].style.top = parseInt($(this)[0].style.top) + 40 + 'vh';
+        // });
+        // setTimeout(function() {
+        //         d3.select('#first_rects').transition().style('opacity', '0').duration(500)
+        //     }, 3500)
+        // $('#first_rects div').each(function() {
+        //     let a = $(this[0]).style
+        //     debugger
+        //     $(this[0]).style.top = parseInt($(this)[0].style.top) + 3 + 'vh'
+        // });
+    d3.selectAll('#first_rects .rects').transition().duration(2000)
+        .style('transform', 'translateY(' + window.innerHeight / 2 + 'px)').ease(d3.easeLinear);
+    setTimeout(function() {
+        d3.select('#first_rects').transition().style('opacity', '0').duration(500)
+    }, 2000)
+}
 
+let lmOnece = true
+let lastRectMoveDown = function() {
+        if (!lmOnece) return
+        lmOnece = !lmOnece
+            // d3.select('#first_rects').transition().style('opacity', '1').duration(500)
+            // $('#first_rects div').each(function(d, i) {
+            //     $(this)[0].style.top = parseInt($(this)[0].style.top) + 40 + 'vh';
+            // });
+            // setTimeout(function() {
+            //         d3.select('#first_rects').transition().style('opacity', '0').duration(500)
+            //     }, 3500)
+            // $('#first_rects div').each(function() {
+            //     let a = $(this[0]).style
+            //     debugger
+            //     $(this[0]).style.top = parseInt($(this)[0].style.top) + 3 + 'vh'
+            // });
+        d3.selectAll('#last_rects .rects').transition().duration(2000)
+            .style('transform', 'translateY(' + window.innerHeight / 2 + 'px)').ease(d3.easeLinear);
+        setTimeout(function() {
+            d3.select('#last_rects').transition().style('opacity', '0').duration(500)
+        }, 2000)
+    }
+    // let firstRectMoveUp = function() {
+    //     if (fmOnece) {
+    //         fmOnece = !fmOnece
+    //         return
+    //     }
+    //     d3.select('#first_rects').transition().style('opacity', '1').duration(500)
+    //     $('#first_rects div').each(function(d, i) {
+    //         $(this)[0].style.top = parseInt($(this)[0].style.top) - 40 + 'vh';
+    //     });
+    // }
 
-let mapRect = d3.select('.map').append("svg").attr('width', '100%').attr('height', "100%")
-let mapwitdh = '0.5rem'
-mapRect.append('rect').attr('width', mapwitdh).attr('height', mapwitdh).attr('fill', '#fff').attr('x', '70%').attr('y', '45%').attr('class', 'rect')
-mapRect.append('rect').attr('width', mapwitdh).attr('height', mapwitdh).attr('fill', '#fff').attr('x', '60%').attr('y', '52%').attr('class', 'rect')
-mapRect.append('rect').attr('width', mapwitdh).attr('height', mapwitdh).attr('fill', '#fff').attr('x', '40%').attr('y', '43%').attr('class', 'rect')
-mapRect.append('rect').attr('width', mapwitdh).attr('height', mapwitdh).attr('fill', '#fff').attr('x', '50%').attr('y', '42%').attr('class', 'rect')
-mapRect.append('rect').attr('width', mapwitdh).attr('height', mapwitdh).attr('fill', '#fff').attr('x', '30%').attr('y', '41%').attr('class', 'rect')
-mapRect.append('rect').attr('width', mapwitdh).attr('height', mapwitdh).attr('fill', '#fff').attr('x', '40%').attr('y', '40%').attr('class', 'rect')
-mapRect.append('rect').attr('width', mapwitdh).attr('height', mapwitdh).attr('fill', '#fff').attr('x', '68%').attr('y', '50%').attr('class', 'rect')
-mapRect.append('rect').attr('width', mapwitdh).attr('height', mapwitdh).attr('fill', '#fff').attr('x', '78%').attr('y', '51%').attr('class', 'rect')
-mapRect.append('rect').attr('width', mapwitdh).attr('height', mapwitdh).attr('fill', '#fff').attr('x', '20%').attr('y', '52%').attr('class', 'rect')
-mapRect.append('rect').attr('width', mapwitdh).attr('height', mapwitdh).attr('fill', '#fff').attr('x', '41%').attr('y', '53%').attr('class', 'rect')
-mapRect.append('rect').attr('width', mapwitdh).attr('height', mapwitdh).attr('fill', '#fff').attr('x', '50%').attr('y', '53%').attr('class', 'rect')
-mapRect.append('rect').attr('width', mapwitdh).attr('height', mapwitdh).attr('fill', '#fff').attr('x', '41%').attr('y', '50%').attr('class', 'rect')
-mapRect.append('rect').attr('width', mapwitdh).attr('height', mapwitdh).attr('fill', '#fff').attr('x', '55%').attr('y', '49%').attr('class', 'rect')
-mapRect.append('rect').attr('width', mapwitdh).attr('height', mapwitdh).attr('fill', '#fff').attr('x', '49%').attr('y', '52%').attr('class', 'rect')
-mapRect.append('rect').attr('width', mapwitdh).attr('height', mapwitdh).attr('fill', '#fff').attr('x', '53%').attr('y', '50%').attr('class', 'rect')
+let svg1 = `<svg id="id" data-name="name" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 524 389.84" style="background:#000"><defs><style>.cls-1,.cls-2{fill:none;}.cls-1{stroke:#fff;stroke-miterlimit:10;}.cls-3{fill:#fff;}</style></defs><title>a</title><path class="cls-1 EVoYIwfV_0" d="M141.5,0.5L398.5,0.5"></path>
+<path class="cls-1 EVoYIwfV_1" d="M24.5,100.05L24.5,8.5L112.05,8.5"></path>
+<path class="cls-1 EVoYIwfV_2" d="M109.82,305.5L24.5,305.5L24.5,239.59"></path>
+<path class="cls-1 EVoYIwfV_3" d="M520.5,265.26L520.5,305.5L432.43,305.5"></path>
+<path class="cls-1 EVoYIwfV_4" d="M520.5,175.4L520.5,239.59"></path>
+<path class="cls-1 EVoYIwfV_5" d="M429.08,8.5L520.5,8.5L520.5,111.77"></path>
+<path class="cls-1 EVoYIwfV_6" d="M143,310.5L398.5,308.5"></path>
+<path class="cls-1 EVoYIwfV_7" d="M443.5,389.5L520.5,305.5"></path>
+<path class="cls-2 EVoYIwfV_8" d="M17.5,295.5L17.5,228.5"></path>
+<path class="cls-3 EVoYIwfV_9" d="M26,230.5v3H15v-3H26m1-1H14v5H27v-5Z" transform="translate(0 -55)"></path>
 
-mapRect.append('rect').attr('width', mapwitdh).attr('height', mapwitdh).attr('fill', '#fff').attr('x', '60%').attr('y', '45%').attr('class', 'rect')
-mapRect.append('rect').attr('width', mapwitdh).attr('height', mapwitdh).attr('fill', '#fff').attr('x', '50%').attr('y', '52%').attr('class', 'rect')
-mapRect.append('rect').attr('width', mapwitdh).attr('height', mapwitdh).attr('fill', '#fff').attr('x', '50%').attr('y', '43%').attr('class', 'rect')
-mapRect.append('rect').attr('width', mapwitdh).attr('height', mapwitdh).attr('fill', '#fff').attr('x', '50%').attr('y', '42%').attr('class', 'rect')
-mapRect.append('rect').attr('width', mapwitdh).attr('height', mapwitdh).attr('fill', '#fff').attr('x', '30%').attr('y', '44%').attr('class', 'rect')
-mapRect.append('rect').attr('width', mapwitdh).attr('height', mapwitdh).attr('fill', '#fff').attr('x', '40%').attr('y', '43%').attr('class', 'rect')
-mapRect.append('rect').attr('width', mapwitdh).attr('height', mapwitdh).attr('fill', '#fff').attr('x', '68%').attr('y', '52%').attr('class', 'rect')
-mapRect.append('rect').attr('width', mapwitdh).attr('height', mapwitdh).attr('fill', '#fff').attr('x', '58%').attr('y', '51%').attr('class', 'rect')
-mapRect.append('rect').attr('width', mapwitdh).attr('height', mapwitdh).attr('fill', '#fff').attr('x', '27%').attr('y', '52%').attr('class', 'rect')
-mapRect.append('rect').attr('width', mapwitdh).attr('height', mapwitdh).attr('fill', '#fff').attr('x', '49%').attr('y', '53%').attr('class', 'rect')
-mapRect.append('rect').attr('width', mapwitdh).attr('height', mapwitdh).attr('fill', '#fff').attr('x', '46%').attr('y', '53%').attr('class', 'rect')
-mapRect.append('rect').attr('width', mapwitdh).attr('height', mapwitdh).attr('fill', '#fff').attr('x', '41%').attr('y', '52%').attr('class', 'rect')
-mapRect.append('rect').attr('width', mapwitdh).attr('height', mapwitdh).attr('fill', '#fff').attr('x', '55%').attr('y', '41%').attr('class', 'rect')
-mapRect.append('rect').attr('width', mapwitdh).attr('height', mapwitdh).attr('fill', '#fff').attr('x', '49%').attr('y', '62%').attr('class', 'rect')
-mapRect.append('rect').attr('width', mapwitdh).attr('height', mapwitdh).attr('fill', '#fff').attr('x', '53%').attr('y', '57%').attr('class', 'rect')
+<path class="cls-3 EVoYIwfV_10" width="19.78" height="5" d="M7.22 182.2 L27 182.2 L27 187.2 L7.22 187.2 Z"></path>
+<path fill='#000' width="19.78" height="5" d="M7.22 182.2 L27 182.2 L27 187.2 L7.22 187.2 Z" transform="translate(-10 0)">
+    <animateTransform attributeName="transform" begin="0s" dur="0.5s"  type="translate" from="-10" to="0" repeatCount="indefinite"/>
+</path>
+<path class="cls-3 EVoYIwfV_11" width="17.49" height="5" d="M9.51 189.9 L27 189.9 L27 194.9 L9.51 194.9 Z"></path>
+<path fill='#000' width="17.49" height="5" d="M9.51 189.9 L27 189.9 L27 194.9 L9.51 194.9 Z" transform="translate(-10 0)">
+    <animateTransform attributeName="transform" begin="0.8s" dur="0.5s"  type="translate" from="-15" to="0" repeatCount="indefinite"/>
+</path>
+<path class="cls-3 EVoYIwfV_12" width="27" height="5" d="M0 197.6 L27 197.6 L27 202.6 L0 202.6 Z"></path>
+<path fill='#000' width="27" height="5" d="M0 197.6 L27 197.6 L27 202.6 L0 202.6 Z" transform="translate(-10 0)">
+    <animateTransform attributeName="transform" begin="0s" dur="0.5s"  type="translate" from="-20" to="0" repeatCount="indefinite"/>
+</path>
+<path class="cls-3 EVoYIwfV_13" width="13" height="5" d="M14 205.3 L27 205.3 L27 210.3 L14 210.3 Z"></path>
+<path fill='#000' width="13" height="5" d="M14 205.3 L27 205.3 L27 210.3 L14 210.3 Z" transform="translate(-10 0)">
+    <animateTransform attributeName="transform" begin="0.4s" dur="0.5s"  type="translate" from="-10" to="0" repeatCount="indefinite"/>
+</path>
+<path class="cls-3 EVoYIwfV_14" width="17.49" height="5" d="M9.51 213 L27 213 L27 218 L9.51 218 Z"></path>
+<path fill='#000' width="17.49" height="5" d="M9.51 213 L27 213 L27 218 L9.51 218 Z" transform="translate(-10 0)">
+    <animateTransform attributeName="transform" begin="0.2s" dur="0.5s"  type="translate" from="-20" to="0" repeatCount="indefinite"/>
+</path>
 
-mapRect.append('rect').attr('width', mapwitdh).attr('height', mapwitdh).attr('fill', '#fff').attr('x', '20%').attr('y', '55%').attr('class', 'rect')
-mapRect.append('rect').attr('width', mapwitdh).attr('height', mapwitdh).attr('fill', '#fff').attr('x', '30%').attr('y', '52%').attr('class', 'rect')
-mapRect.append('rect').attr('width', mapwitdh).attr('height', mapwitdh).attr('fill', '#fff').attr('x', '10%').attr('y', '61%').attr('class', 'rect')
-mapRect.append('rect').attr('width', mapwitdh).attr('height', mapwitdh).attr('fill', '#fff').attr('x', '40%').attr('y', '29%').attr('class', 'rect')
-mapRect.append('rect').attr('width', mapwitdh).attr('height', mapwitdh).attr('fill', '#fff').attr('x', '30%').attr('y', '49%').attr('class', 'rect')
-mapRect.append('rect').attr('width', mapwitdh).attr('height', mapwitdh).attr('fill', '#fff').attr('x', '36%').attr('y', '38%').attr('class', 'rect')
-mapRect.append('rect').attr('width', mapwitdh).attr('height', mapwitdh).attr('fill', '#fff').attr('x', '45%').attr('y', '47%').attr('class', 'rect')
-mapRect.append('rect').attr('width', mapwitdh).attr('height', mapwitdh).attr('fill', '#fff').attr('x', '47%').attr('y', '45%').attr('class', 'rect')
-mapRect.append('rect').attr('width', mapwitdh).attr('height', mapwitdh).attr('fill', '#fff').attr('x', '52%').attr('y', '36%').attr('class', 'rect')
-mapRect.append('rect').attr('width', mapwitdh).attr('height', mapwitdh).attr('fill', '#fff').attr('x', '17%').attr('y', '46%').attr('class', 'rect')
-mapRect.append('rect').attr('width', mapwitdh).attr('height', mapwitdh).attr('fill', '#fff').attr('x', '21%').attr('y', '51%').attr('class', 'rect')
-mapRect.append('rect').attr('width', mapwitdh).attr('height', mapwitdh).attr('fill', '#fff').attr('x', '20%').attr('y', '48%').attr('class', 'rect')
-mapRect.append('rect').attr('width', mapwitdh).attr('height', mapwitdh).attr('fill', '#fff').attr('x', '23%').attr('y', '56%').attr('class', 'rect')
-mapRect.append('rect').attr('width', mapwitdh).attr('height', mapwitdh).attr('fill', '#fff').attr('x', '34%').attr('y', '29%').attr('class', 'rect')
-mapRect.append('rect').attr('width', mapwitdh).attr('height', mapwitdh).attr('fill', '#fff').attr('x', '25%').attr('y', '61%').attr('class', 'rect')
+<path class="cls-3 EVoYIwfV_15" d="M162,315L144.51,315L140.51,310L158,310L162,315Z"></path>
+<path class="cls-3 EVoYIwfV_16" d="M381.51,313L399,313L403,308L385.51,308L381.51,313Z"></path>
+<path class="cls-3 EVoYIwfV_17" d="M515,116.25L515,98.75L520,94.75L520,112.25L515,116.25Z"></path>
+<path class="cls-3 EVoYIwfV_18" d="M402.25,6L384.75,6L380.75,1L398.25,1L402.25,6Z"></path>
+<path class="cls-3 EVoYIwfV_19" d="M137.75,6L155.25,6L159.25,1L141.75,1L137.75,6Z"></path>
+<path class="cls-3 EVoYIwfV_20" d="M30,104.25L30,86.75L25,82.75L25,100.25L30,104.25Z"></path>
+<path class="cls-3 EVoYIwfV_21" width="6" height="6" d="M 25,6 L 25,6 A 3,3,0,0,1,28,9 L 28,9 A 3,3,0,0,1,25,12 L 25,12 A 3,3,0,0,1,22,9 L 22,9 A 3,3,0,0,1,25,6"></path>
+<path class="cls-3 EVoYIwfV_22" width="6" height="6" d="M 521,238 L 521,238 A 3,3,0,0,1,524,241 L 524,241 A 3,3,0,0,1,521,244 L 521,244 A 3,3,0,0,1,518,241 L 518,241 A 3,3,0,0,1,521,238"></path>
+<path class="cls-3 EVoYIwfV_23" width="6" height="6" d="M 521,261 L 521,261 A 3,3,0,0,1,524,264 L 524,264 A 3,3,0,0,1,521,267 L 521,267 A 3,3,0,0,1,518,264 L 518,264 A 3,3,0,0,1,521,261"></path>
+<path class="cls-3 EVoYIwfV_24" width="6" height="6" d="M 520,303 L 520,303 A 3,3,0,0,1,523,306 L 523,306 A 3,3,0,0,1,520,309 L 520,309 A 3,3,0,0,1,517,306 L 517,306 A 3,3,0,0,1,520,303"></path>
+<style data-made-with="vivus-instant">.EVoYIwfV_0{stroke-dasharray:257 259;stroke-dashoffset:258;animation:EVoYIwfV_draw 1333ms ease-in-out 0ms forwards;}.EVoYIwfV_1{stroke-dasharray:180 182;stroke-dashoffset:181;animation:EVoYIwfV_draw 1333ms ease-in-out 27ms forwards;}.EVoYIwfV_2{stroke-dasharray:152 154;stroke-dashoffset:153;animation:EVoYIwfV_draw 1333ms ease-in-out 55ms forwards;}.EVoYIwfV_3{stroke-dasharray:129 131;stroke-dashoffset:130;animation:EVoYIwfV_draw 1333ms ease-in-out 83ms forwards;}.EVoYIwfV_4{stroke-dasharray:65 67;stroke-dashoffset:66;animation:EVoYIwfV_draw 1333ms ease-in-out 111ms forwards;}.EVoYIwfV_5{stroke-dasharray:195 197;stroke-dashoffset:196;animation:EVoYIwfV_draw 1333ms ease-in-out 138ms forwards;}.EVoYIwfV_6{stroke-dasharray:256 258;stroke-dashoffset:257;animation:EVoYIwfV_draw 1333ms ease-in-out 166ms forwards;}.EVoYIwfV_7{stroke-dasharray:114 116;stroke-dashoffset:115;animation:EVoYIwfV_draw 1333ms ease-in-out 194ms forwards;}.EVoYIwfV_8{stroke-dasharray:67 69;stroke-dashoffset:68;animation:EVoYIwfV_draw 1333ms ease-in-out 222ms forwards;}.EVoYIwfV_9{stroke-dasharray:64 66;stroke-dashoffset:65;animation:EVoYIwfV_draw 1333ms ease-in-out 249ms forwards;}.EVoYIwfV_10{stroke-dasharray:50 52;stroke-dashoffset:51;animation:EVoYIwfV_draw 1333ms ease-in-out 277ms forwards;}.EVoYIwfV_11{stroke-dasharray:45 47;stroke-dashoffset:46;animation:EVoYIwfV_draw 1333ms ease-in-out 305ms forwards;}.EVoYIwfV_12{stroke-dasharray:64 66;stroke-dashoffset:65;animation:EVoYIwfV_draw 1333ms ease-in-out 333ms forwards;}.EVoYIwfV_13{stroke-dasharray:36 38;stroke-dashoffset:37;animation:EVoYIwfV_draw 1333ms ease-in-out 361ms forwards;}.EVoYIwfV_14{stroke-dasharray:45 47;stroke-dashoffset:46;animation:EVoYIwfV_draw 1333ms ease-in-out 388ms forwards;}.EVoYIwfV_15{stroke-dasharray:48 50;stroke-dashoffset:49;animation:EVoYIwfV_draw 1333ms ease-in-out 416ms forwards;}.EVoYIwfV_16{stroke-dasharray:48 50;stroke-dashoffset:49;animation:EVoYIwfV_draw 1333ms ease-in-out 444ms forwards;}.EVoYIwfV_17{stroke-dasharray:48 50;stroke-dashoffset:49;animation:EVoYIwfV_draw 1333ms ease-in-out 472ms forwards;}.EVoYIwfV_18{stroke-dasharray:48 50;stroke-dashoffset:49;animation:EVoYIwfV_draw 1333ms ease-in-out 499ms forwards;}.EVoYIwfV_19{stroke-dasharray:48 50;stroke-dashoffset:49;animation:EVoYIwfV_draw 1333ms ease-in-out 527ms forwards;}.EVoYIwfV_20{stroke-dasharray:48 50;stroke-dashoffset:49;animation:EVoYIwfV_draw 1333ms ease-in-out 555ms forwards;}.EVoYIwfV_21{stroke-dasharray:19 21;stroke-dashoffset:20;animation:EVoYIwfV_draw 1333ms ease-in-out 583ms forwards;}.EVoYIwfV_22{stroke-dasharray:19 21;stroke-dashoffset:20;animation:EVoYIwfV_draw 1333ms ease-in-out 611ms forwards;}.EVoYIwfV_23{stroke-dasharray:19 21;stroke-dashoffset:20;animation:EVoYIwfV_draw 1333ms ease-in-out 638ms forwards;}.EVoYIwfV_24{stroke-dasharray:19 21;stroke-dashoffset:20;animation:EVoYIwfV_draw 1333ms ease-in-out 666ms forwards;}@keyframes EVoYIwfV_draw{100%{stroke-dashoffset:0;}}@keyframes EVoYIwfV_fade{0%{stroke-opacity:1;}93.54838709677419%{stroke-opacity:1;}100%{stroke-opacity:0;}}</style>
+</svg>`
 
-mapRect.append('rect').attr('width', mapwitdh).attr('height', mapwitdh).attr('fill', '#fff').attr('x', '78%').attr('y', '55%').attr('class', 'rect')
-mapRect.append('rect').attr('width', mapwitdh).attr('height', mapwitdh).attr('fill', '#fff').attr('x', '80%').attr('y', '52%').attr('class', 'rect')
-mapRect.append('rect').attr('width', mapwitdh).attr('height', mapwitdh).attr('fill', '#fff').attr('x', '81%').attr('y', '61%').attr('class', 'rect')
-mapRect.append('rect').attr('width', mapwitdh).attr('height', mapwitdh).attr('fill', '#fff').attr('x', '76%').attr('y', '69%').attr('class', 'rect')
-mapRect.append('rect').attr('width', mapwitdh).attr('height', mapwitdh).attr('fill', '#fff').attr('x', '74%').attr('y', '69%').attr('class', 'rect')
-mapRect.append('rect').attr('width', mapwitdh).attr('height', mapwitdh).attr('fill', '#fff').attr('x', '70%').attr('y', '68%').attr('class', 'rect')
-mapRect.append('rect').attr('width', mapwitdh).attr('height', mapwitdh).attr('fill', '#fff').attr('x', '80%').attr('y', '67%').attr('class', 'rect')
-mapRect.append('rect').attr('width', mapwitdh).attr('height', mapwitdh).attr('fill', '#fff').attr('x', '82%').attr('y', '65%').attr('class', 'rect')
-mapRect.append('rect').attr('width', mapwitdh).attr('height', mapwitdh).attr('fill', '#fff').attr('x', '77%').attr('y', '66%').attr('class', 'rect')
-mapRect.append('rect').attr('width', mapwitdh).attr('height', mapwitdh).attr('fill', '#fff').attr('x', '78%').attr('y', '66%').attr('class', 'rect')
-mapRect.append('rect').attr('width', mapwitdh).attr('height', mapwitdh).attr('fill', '#fff').attr('x', '72%').attr('y', '51%').attr('class', 'rect')
-mapRect.append('rect').attr('width', mapwitdh).attr('height', mapwitdh).attr('fill', '#fff').attr('x', '79%').attr('y', '48%').attr('class', 'rect')
-mapRect.append('rect').attr('width', mapwitdh).attr('height', mapwitdh).attr('fill', '#fff').attr('x', '84%').attr('y', '56%').attr('class', 'rect')
-mapRect.append('rect').attr('width', mapwitdh).attr('height', mapwitdh).attr('fill', '#fff').attr('x', '87%').attr('y', '59%').attr('class', 'rect')
-mapRect.append('rect').attr('width', mapwitdh).attr('height', mapwitdh).attr('fill', '#fff').attr('x', '81%').attr('y', '61%').attr('class', 'rect')
+let svg2 = `<svg id="id" data-name="name" 
+xmlns="http://www.w3.org/2000/svg" viewBox="0 0 524 389.84" style="background:#000">
+<defs>
+    <style>.cls-1,.cls-2{fill:none;}.cls-1{stroke:#fff;stroke-miterlimit:10;}.cls-3{fill:#fff;}</style>
+</defs>
+<title>a</title>
+<path class="cls-1 EVoYIwfV_0" d="M141.5,0.5L398.5,0.5"></path>
+<path class="cls-1 EVoYIwfV_1" d="M24.5,100.05L24.5,8.5L112.05,8.5"></path>
+<path class="cls-1 EVoYIwfV_2" d="M109.82,305.5L24.5,305.5L24.5,239.59"></path>
+<path class="cls-1 EVoYIwfV_3" d="M520.5,265.26L520.5,305.5L432.43,305.5"></path>
+<path class="cls-1 EVoYIwfV_4" d="M520.5,175.4L520.5,239.59"></path>
+<path class="cls-1 EVoYIwfV_5" d="M429.08,8.5L520.5,8.5L520.5,111.77"></path>
+<path class="cls-1 EVoYIwfV_6" d="M143,310.5L398.5,308.5"></path>
+<path class="cls-1 EVoYIwfV_7" d="M443.5,389.5L520.5,305.5"></path>
+<path class="cls-2 EVoYIwfV_8" d="M17.5,295.5L17.5,228.5"></path>
+<path class="cls-3 EVoYIwfV_9" d="M26,230.5v3H15v-3H26m1-1H14v5H27v-5Z" transform="translate(0 -55)"></path>
 
-mapRect.append('rect').attr('width', mapwitdh).attr('height', mapwitdh).attr('stroke-width', '1').attr('stroke', '#fff').attr('x', '21%').attr('y', '62%').attr('class', 'rect')
-mapRect.append('rect').attr('width', mapwitdh).attr('height', mapwitdh).attr('stroke-width', '1').attr('stroke', '#fff').attr('x', '60%').attr('y', '46%').attr('class', 'rect')
-mapRect.append('rect').attr('width', mapwitdh).attr('height', mapwitdh).attr('stroke-width', '1').attr('stroke', '#fff').attr('x', '80%').attr('y', '70%').attr('class', 'rect')
-mapRect.append('rect').attr('width', mapwitdh).attr('height', mapwitdh).attr('stroke-width', '1').attr('stroke', '#fff').attr('x', '40%').attr('y', '34%').attr('class', 'rect')
-mapRect.append('rect').attr('width', mapwitdh).attr('height', mapwitdh).attr('stroke-width', '1').attr('stroke', '#fff').attr('x', '25%').attr('y', '50%').attr('class', 'rect')
-mapRect.append('rect').attr('width', mapwitdh).attr('height', mapwitdh).attr('stroke-width', '1').attr('stroke', '#fff').attr('x', '50%').attr('y', '60%').attr('class', 'rect')
-mapRect.append('rect').attr('width', mapwitdh).attr('height', mapwitdh).attr('stroke-width', '1').attr('stroke', '#fff').attr('x', '60%').attr('y', '70%').attr('class', 'rect')
-mapRect.append('rect').attr('width', mapwitdh).attr('height', mapwitdh).attr('stroke-width', '1').attr('stroke', '#fff').attr('x', '7%').attr('y', '52%').attr('class', 'rect')
+<path class="cls-3 EVoYIwfV_10" width="19.78" height="5" d="M7.22 182.2 L27 182.2 L27 187.2 L7.22 187.2 Z"></path>
+<path fill='#000' width="19.78" height="5" d="M7.22 182.2 L27 182.2 L27 187.2 L7.22 187.2 Z" transform="translate(-10 0)">
+    <animateTransform attributeName="transform" begin="0s" dur="0.5s"  type="translate" from="-10" to="0" repeatCount="indefinite"/>
+</path>
+<path class="cls-3 EVoYIwfV_11" width="17.49" height="5" d="M9.51 189.9 L27 189.9 L27 194.9 L9.51 194.9 Z"></path>
+<path fill='#000' width="17.49" height="5" d="M9.51 189.9 L27 189.9 L27 194.9 L9.51 194.9 Z" transform="translate(-10 0)">
+    <animateTransform attributeName="transform" begin="0.8s" dur="0.5s"  type="translate" from="-15" to="0" repeatCount="indefinite"/>
+</path>
+<path class="cls-3 EVoYIwfV_12" width="27" height="5" d="M0 197.6 L27 197.6 L27 202.6 L0 202.6 Z"></path>
+<path fill='#000' width="27" height="5" d="M0 197.6 L27 197.6 L27 202.6 L0 202.6 Z" transform="translate(-10 0)">
+    <animateTransform attributeName="transform" begin="0s" dur="0.5s"  type="translate" from="-20" to="0" repeatCount="indefinite"/>
+</path>
+<path class="cls-3 EVoYIwfV_13" width="13" height="5" d="M14 205.3 L27 205.3 L27 210.3 L14 210.3 Z"></path>
+<path fill='#000' width="13" height="5" d="M14 205.3 L27 205.3 L27 210.3 L14 210.3 Z" transform="translate(-10 0)">
+    <animateTransform attributeName="transform" begin="0.4s" dur="0.5s"  type="translate" from="-10" to="0" repeatCount="indefinite"/>
+</path>
+<path class="cls-3 EVoYIwfV_14" width="17.49" height="5" d="M9.51 213 L27 213 L27 218 L9.51 218 Z"></path>
+<path fill='#000' width="17.49" height="5" d="M9.51 213 L27 213 L27 218 L9.51 218 Z" transform="translate(-10 0)">
+    <animateTransform attributeName="transform" begin="0.2s" dur="0.5s"  type="translate" from="-20" to="0" repeatCount="indefinite"/>
+</path>
+<path class="cls-3 EVoYIwfV_15" d="M162,315L144.51,315L140.51,310L158,310L162,315Z"></path>
+<path class="cls-3 EVoYIwfV_16" d="M381.51,313L399,313L403,308L385.51,308L381.51,313Z"></path>
+<path class="cls-3 EVoYIwfV_17" d="M515,116.25L515,98.75L520,94.75L520,112.25L515,116.25Z"></path>
+<path class="cls-3 EVoYIwfV_18" d="M402.25,6L384.75,6L380.75,1L398.25,1L402.25,6Z"></path>
+<path class="cls-3 EVoYIwfV_19" d="M137.75,6L155.25,6L159.25,1L141.75,1L137.75,6Z"></path>
+<path class="cls-3 EVoYIwfV_20" d="M30,104.25L30,86.75L25,82.75L25,100.25L30,104.25Z"></path>
+<path class="cls-3 EVoYIwfV_21" width="6" height="6" d="M 25,6 L 25,6 A 3,3,0,0,1,28,9 L 28,9 A 3,3,0,0,1,25,12 L 25,12 A 3,3,0,0,1,22,9 L 22,9 A 3,3,0,0,1,25,6"></path>
+<path class="cls-3 EVoYIwfV_22" width="6" height="6" d="M 521,238 L 521,238 A 3,3,0,0,1,524,241 L 524,241 A 3,3,0,0,1,521,244 L 521,244 A 3,3,0,0,1,518,241 L 518,241 A 3,3,0,0,1,521,238"></path>
+<path class="cls-3 EVoYIwfV_23" width="6" height="6" d="M 521,261 L 521,261 A 3,3,0,0,1,524,264 L 524,264 A 3,3,0,0,1,521,267 L 521,267 A 3,3,0,0,1,518,264 L 518,264 A 3,3,0,0,1,521,261"></path>
+<path class="cls-3 EVoYIwfV_24" width="6" height="6" d="M 520,303 L 520,303 A 3,3,0,0,1,523,306 L 523,306 A 3,3,0,0,1,520,309 L 520,309 A 3,3,0,0,1,517,306 L 517,306 A 3,3,0,0,1,520,303"></path>
+<style data-made-with="vivus-instant">
+.EVoYIwfV_0{stroke-dasharray:257 259;stroke-dashoffset:0;animation:EVoYIwfV_draw1 1333ms ease-in-out 0ms forwards;}
+.EVoYIwfV_1{stroke-dasharray:180 182;stroke-dashoffset:0;animation:EVoYIwfV_draw2 1333ms ease-in-out 27ms forwards;}
+.EVoYIwfV_2{stroke-dasharray:152 154;stroke-dashoffset:0;animation:EVoYIwfV_draw3 1333ms ease-in-out 55ms forwards;}
+.EVoYIwfV_3{stroke-dasharray:129 131;stroke-dashoffset:0;animation:EVoYIwfV_draw4 1333ms ease-in-out 83ms forwards;}
+.EVoYIwfV_4{stroke-dasharray:65 67;stroke-dashoffset:0;animation:EVoYIwfV_draw5 1333ms ease-in-out 111ms forwards;}
+.EVoYIwfV_5{stroke-dasharray:195 197;stroke-dashoffset:0;animation:EVoYIwfV_draw6 1333ms ease-in-out 138ms forwards;}
+.EVoYIwfV_6{stroke-dasharray:256 258;stroke-dashoffset:0;animation:EVoYIwfV_draw7 1333ms ease-in-out 166ms forwards;}
+.EVoYIwfV_7{stroke-dasharray:114 116;stroke-dashoffset:0;animation:EVoYIwfV_draw8 1333ms ease-in-out 194ms forwards;}
+.EVoYIwfV_8{stroke-dasharray:67 69;stroke-dashoffset:0;animation:EVoYIwfV_draw9 1333ms ease-in-out 222ms forwards;}
+.EVoYIwfV_9{stroke-dasharray:64 66;stroke-dashoffset:0;animation:EVoYIwfV_draw10 1333ms ease-in-out 249ms forwards;}
+.EVoYIwfV_10{stroke-dasharray:50 52;stroke-dashoffset:0;animation:EVoYIwfV_draw11 1333ms ease-in-out 277ms forwards;}
+.EVoYIwfV_11{stroke-dasharray:45 47;stroke-dashoffset:0;animation:EVoYIwfV_draw12 1333ms ease-in-out 305ms forwards;}
+.EVoYIwfV_12{stroke-dasharray:64 66;stroke-dashoffset:0;animation:EVoYIwfV_draw13 1333ms ease-in-out 333ms forwards;}
+.EVoYIwfV_13{stroke-dasharray:36 38;stroke-dashoffset:0;animation:EVoYIwfV_draw14 1333ms ease-in-out 361ms forwards;}
+.EVoYIwfV_14{stroke-dasharray:45 47;stroke-dashoffset:0;animation:EVoYIwfV_draw15 1333ms ease-in-out 388ms forwards;}
+.EVoYIwfV_15{stroke-dasharray:48 50;stroke-dashoffset:0;animation:EVoYIwfV_draw16 1333ms ease-in-out 416ms forwards;}
+.EVoYIwfV_16{stroke-dasharray:48 50;stroke-dashoffset:0;animation:EVoYIwfV_draw17 1333ms ease-in-out 444ms forwards;}
+.EVoYIwfV_17{stroke-dasharray:48 50;stroke-dashoffset:0;animation:EVoYIwfV_draw18 1333ms ease-in-out 472ms forwards;}
+.EVoYIwfV_18{stroke-dasharray:48 50;stroke-dashoffset:0;animation:EVoYIwfV_draw19 1333ms ease-in-out 499ms forwards;}
+.EVoYIwfV_19{stroke-dasharray:48 50;stroke-dashoffset:0;animation:EVoYIwfV_draw20 1333ms ease-in-out 527ms forwards;}
+.EVoYIwfV_20{stroke-dasharray:48 50;stroke-dashoffset:0;animation:EVoYIwfV_draw21 1333ms ease-in-out 555ms forwards;}
+.EVoYIwfV_21{stroke-dasharray:19 21;stroke-dashoffset:0;animation:EVoYIwfV_draw22 1333ms ease-in-out 583ms forwards;}
+.EVoYIwfV_22{stroke-dasharray:19 21;stroke-dashoffset:0;animation:EVoYIwfV_draw23 1333ms ease-in-out 611ms forwards;}
+.EVoYIwfV_23{stroke-dasharray:19 21;stroke-dashoffset:0;animation:EVoYIwfV_draw24 1333ms ease-in-out 638ms forwards;}
+.EVoYIwfV_24{stroke-dasharray:19 21;stroke-dashoffset:0;animation:EVoYIwfV_draw25 1333ms ease-in-out 666ms forwards;}
+@keyframes EVoYIwfV_draw1{100%{stroke-dashoffset:258;}}
+@keyframes EVoYIwfV_draw2{100%{stroke-dashoffset:181;}}
+@keyframes EVoYIwfV_draw3{100%{stroke-dashoffset:153;}}
+@keyframes EVoYIwfV_draw4{100%{stroke-dashoffset:130;}}
+@keyframes EVoYIwfV_draw5{100%{stroke-dashoffset:66;}}
+@keyframes EVoYIwfV_draw6{100%{stroke-dashoffset:196;}}
+@keyframes EVoYIwfV_draw7{100%{stroke-dashoffset:257;}}
+@keyframes EVoYIwfV_draw8{100%{stroke-dashoffset:115;}}
+@keyframes EVoYIwfV_draw9{100%{stroke-dashoffset:68;}}
+@keyframes EVoYIwfV_dra10{100%{stroke-dashoffset:65;}}
+@keyframes EVoYIwfV_draw11{100%{stroke-dashoffset:51;}}
+@keyframes EVoYIwfV_draw24{100%{stroke-dashoffset:46;}}
+@keyframes EVoYIwfV_draw12{100%{stroke-dashoffset:65;}}
+@keyframes EVoYIwfV_draw13{100%{stroke-dashoffset:37;}}
+@keyframes EVoYIwfV_draw14{100%{stroke-dashoffset:46;}}
+@keyframes EVoYIwfV_draw15{100%{stroke-dashoffset:49;}}
+@keyframes EVoYIwfV_draw16{100%{stroke-dashoffset:49;}}
+@keyframes EVoYIwfV_draw17{100%{stroke-dashoffset:49;}}
+@keyframes EVoYIwfV_draw18{100%{stroke-dashoffset:49;}}
+@keyframes EVoYIwfV_draw19{100%{stroke-dashoffset:49;}}
+@keyframes EVoYIwfV_draw20{100%{stroke-dashoffset:49;}}
+@keyframes EVoYIwfV_draw21{100%{stroke-dashoffset:20;}}
+@keyframes EVoYIwfV_draw22{100%{stroke-dashoffset:20;}}
+@keyframes EVoYIwfV_draw23{100%{stroke-dashoffset:20;}}
+@keyframes EVoYIwfV_draw24{100%{stroke-dashoffset:20;}}
 
+@keyframes EVoYIwfV_fade{0%{stroke-opacity:1;}93.54838709677419%{stroke-opacity:1;}100%{stroke-opacity:0;}}</style>
+</svg>`
 
-let r1First = true
-let appenRect1 = function(type) {
-    if (!r1First) return
-    r1First = !r1First
-    let a = p1Rect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('fill', '#fff').attr('x', '34%').attr('y', '63%').attr('opacity', '0')
-    let b = p1Rect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('fill', '#fff').attr('x', '32%').attr('y', '75%').attr('opacity', '0')
-    let c = p1Rect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('fill', '#fff').attr('x', '60%').attr('y', '80%').attr('opacity', '0')
-    let d = p1Rect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('stroke-width', '1').attr('stroke', '#fff').attr('x', '63%').attr('y', '64%').attr('class', 'rect').attr('opacity', '0')
-    a.transition().attr('opacity', '1').duration(1000).delay(400)
-    b.transition().attr('opacity', '1').duration(1000).delay(500)
-    c.transition().attr('opacity', '1').duration(1000).delay(600)
-    d.transition().attr('opacity', '1').duration(1000).delay(700)
+let p3Onece = true
+let addP3Imge = function(time) {
+    if (!p3Onece) return
+    p3Onece = !p3Onece
+    setTimeout(function() {
+        p3Rect.append("svg").attr('class', 'p3svg').attr('width', window.innerWidth).attr('height', window.innerWidth / 2).attr('position', 'absolute').attr('left', '0').attr('top', '-20%').attr('viewBox', "0 0 524 389.84").html(svg1)
+            .append("image")
+            .attr("x", '5.5%')
+            .attr("y", '-10%')
+            .attr("width", '93%')
+            .attr("height", '100%')
+            .attr("xlink:href", './img/1969-3.jpg');
+        p3Rect.append('rect').attr('class', 'imgRect').attr('width', '64%').attr('height', '2rem').attr('y', '40%').attr('x', '19.2%').attr('fill', '#808080').attr('opacity', '0.8')
+        p3Rect.append('text').attr('class', 'imgText').attr('width', '64%').attr('height', '2rem').attr('y', '44.5%').attr('x', '21%').attr('fill', '#fff').attr('font-size', '1.1rem').html('参与“东方红”卫星发射（1970）')
+        setTimeout(function() {
+            p3Rect.select('.imgRect').attr('height', '0').transition().duration(2000)
+            p3Rect.select(' .imgText').html('')
+            p3Rect.select('.p3svg').html(svg2)
+            setTimeout(function() {
+                p3Rect.select('.imgRect').attr('height', '2rem').transition()
+                p3Rect.select(' .imgText').html('参与“东方红”卫星发射（1970）')
+                p3Rect.select('.p3svg').html(svg1)
+                    .append("image")
+                    .attr("x", '5.5%')
+                    .attr("y", '-10%')
+                    .attr("width", '93%')
+                    .attr("height", '100%')
+                    .attr("xlink:href", './img/1969-2.jpg');
+                setTimeout(function() {
+                    p3Rect.select('.imgRect').attr('height', '0').transition().duration(2000)
+                    p3Rect.select(' .imgText').html('')
+                    p3Rect.select('.p3svg').html(svg2)
+                    setTimeout(function() {
+                        p3Rect.select('.imgRect').attr('height', '2rem').transition()
+                        p3Rect.select(' .imgText').html('原子弹部件研发生产（1965）')
+                        p3Rect.select('.p3svg').html(svg1)
+                            .append("image")
+                            .attr("x", '5.5%')
+                            .attr("y", '-10%')
+                            .attr("width", '93%')
+                            .attr("height", '89%')
+                            .attr("xlink:href", './img/1969-1.jpg');
+                    }, 1000)
+                }, 3000)
+            }, 1000)
+        }, 3000)
+    }, time * 9)
+}
+
+let p4Onece = true
+let addP4Imge = function(time) {
+    if (!p4Onece) return
+    p4Onece = !p4Onece
+    setTimeout(function() {
+        p4Rect.append("svg").attr('class', 'p4svg').attr('width', window.innerWidth).attr('height', window.innerWidth / 2).attr('position', 'absolute').attr('left', '0').attr('top', '-20%').attr('viewBox', "0 0 524 389.84").html(svg1)
+            .append("image")
+            .attr("x", '5.5%')
+            .attr("y", '-10%')
+            .attr("width", '93%')
+            .attr("height", '100%')
+            .attr("xlink:href", './img/1979-1.jpg');
+        p4Rect.append('rect').attr('class', 'imgRect').attr('width', '64%').attr('height', '2rem').attr('y', '40%').attr('x', '19.2%').attr('fill', '#808080').attr('opacity', '0.8')
+        p4Rect.append('text').attr('class', 'imgText').attr('width', '64%').attr('height', '2rem').attr('y', '44.5%').attr('x', '21%').attr('fill', '#fff').attr('font-size', '1.1rem').html('第一台“双燕”牌冰箱下线（1983）')
+        setTimeout(function() {
+            p4Rect.select('.imgRect').attr('height', '0').transition().duration(2000)
+            p4Rect.select(' .imgText').html('')
+            p4Rect.select('.p4svg').html(svg2)
+            setTimeout(function() {
+                p4Rect.select('.imgRect').attr('height', '2rem').transition()
+                p4Rect.select(' .imgText').html('第一台黑白电视机')
+                p4Rect.select('.p4svg').html(svg1)
+                    .append("image")
+                    .attr("x", '5.5%')
+                    .attr("y", '-10%')
+                    .attr("width", '93%')
+                    .attr("height", '100%')
+                    .attr("xlink:href", './img/1979s-2.jpg');
+            }, 1000)
+        }, 3000)
+    }, time * 10)
+}
+
+let p5Onece = true
+let addP5Imge = function(time) {
+    if (!p5Onece) return
+    p5Onece = !p5Onece
+    setTimeout(function() {
+        p5Rect.append("svg").attr('class', 'p5svg').attr('width', window.innerWidth).attr('height', window.innerWidth / 2).attr('position', 'absolute').attr('left', '0').attr('top', '-20%').attr('viewBox', "0 0 524 389.84").html(svg1)
+            .append("image")
+            .attr("x", '5.5%')
+            .attr("y", '-10%')
+            .attr("width", '93%')
+            .attr("height", '100%')
+            .attr("xlink:href", './img/1989-1.jpg');
+        p5Rect.append('rect').attr('class', 'imgRect').attr('width', '64%').attr('height', '2rem').attr('y', '40%').attr('x', '19.2%').attr('fill', '#808080').attr('opacity', '0.8')
+        p5Rect.append('text').attr('class', 'imgText').attr('width', '64%').attr('height', '2rem').attr('y', '44.5%').attr('x', '21%').attr('fill', '#fff').attr('font-size', '1.1rem').html('地奥心血康获中科院科技进步一等奖（1988）')
+    }, time * 11)
+}
+
+let p6Onece = true
+let addP6Imge = function(time) {
+    if (!p6Onece) return
+    p6Onece = !p6Onece
+    setTimeout(function() {
+        p6Rect.append("svg").attr('class', 'p6svg').attr('width', window.innerWidth).attr('height', window.innerWidth / 2).attr('position', 'absolute').attr('left', '0').attr('top', '-20%').attr('viewBox', "0 0 524 389.84").html(svg1)
+            .append("image")
+            .attr("x", '5.5%')
+            .attr("y", '-10%')
+            .attr("width", '93%')
+            .attr("height", '100%')
+            .attr("xlink:href", './img/1999-1.jpg');
+        p6Rect.append('rect').attr('class', 'imgRect').attr('width', '64%').attr('height', '2rem').attr('y', '40%').attr('x', '19.2%').attr('fill', '#808080').attr('opacity', '0.8')
+        p6Rect.append('text').attr('class', 'imgText').attr('width', '64%').attr('height', '2rem').attr('y', '44.5%').attr('x', '21%').attr('fill', '#fff').attr('font-size', '1.1rem').html('枭龙飞机成功首飞（2003）')
+    }, time * 12)
+}
+
+let p7Onece = true
+let addP7Imge = function(time) {
+    if (!p7Onece) return
+    p7Onece = !p7Onece
+    setTimeout(function() {
+        p7Rect.append("svg").attr('class', 'p7svg').attr('width', window.innerWidth).attr('height', window.innerWidth / 2).attr('position', 'absolute').attr('left', '0').attr('top', '-20%').attr('viewBox', "0 0 524 389.84").html(svg1)
+            .append("image")
+            .attr("x", '5.5%')
+            .attr("y", '-10%')
+            .attr("width", '93%')
+            .attr("height", '100%')
+            .attr("xlink:href", './img/2009-1.jpg');
+        p7Rect.append('rect').attr('class', 'imgRect').attr('width', '64%').attr('height', '2rem').attr('y', '40%').attr('x', '19.2%').attr('fill', '#808080').attr('opacity', '0.8')
+        p7Rect.append('text').attr('class', 'imgText').attr('width', '64%').attr('height', '2rem').attr('y', '44.5%').attr('x', '21%').attr('fill', '#fff').attr('font-size', '1.1rem').html('C919大飞机首架机头下线（2013）')
+        setTimeout(function() {
+            p7Rect.select('.imgRect').attr('height', '0').transition().duration(2000)
+            p7Rect.select(' .imgText').html('')
+            p7Rect.select('.p7svg').html(svg2)
+            setTimeout(function() {
+                p7Rect.select('.imgRect').attr('height', '2rem').transition()
+                p7Rect.select(' .imgText').html('有轨电车')
+                p7Rect.select('.p7svg').html(svg1)
+                    .append("image")
+                    .attr("x", '5.5%')
+                    .attr("y", '-10%')
+                    .attr("width", '93%')
+                    .attr("height", '100%')
+                    .attr("xlink:href", './img/2009-2.jpg');
+            }, 1000)
+        }, 3000)
+    }, time * 13)
+}
+
+let p8Onece = true
+let addP8Imge = function(time) {
+    if (!p8Onece) return
+    p8Onece = !p8Onece
+    setTimeout(function() {
+        p8Rect.append("svg").attr('class', 'p8svg').attr('width', window.innerWidth).attr('height', window.innerWidth / 2).attr('position', 'absolute').attr('left', '0').attr('top', '-20%').attr('viewBox', "0 0 524 389.84").html(svg1)
+            .append("image")
+            .attr("x", '5.5%')
+            .attr("y", '-10%')
+            .attr("width", '93%')
+            .attr("height", '100%')
+            .attr("xlink:href", './img/2019-1.jpg');
+        p8Rect.append('rect').attr('class', 'imgRect').attr('width', '64%').attr('height', '2rem').attr('y', '40%').attr('x', '19.2%').attr('fill', '#808080').attr('opacity', '0.8')
+        p8Rect.append('text').attr('class', 'imgText').attr('width', '64%').attr('height', '2rem').attr('y', '44.5%').attr('x', '21%').attr('fill', '#fff').attr('font-size', '1.1rem').html('京东方AMOLED柔性显示屏下线（2018）')
+        setTimeout(function() {
+            p8Rect.select('.imgRect').attr('height', '0').transition().duration(2000)
+            p8Rect.select(' .imgText').html('')
+            p8Rect.select('.p8svg').html(svg2)
+            setTimeout(function() {
+                p8Rect.select('.imgRect').attr('height', '2rem').transition()
+                p8Rect.select(' .imgText').html('康博西普眼用注射液')
+                p8Rect.select('.p8svg').html(svg1)
+                    .append("image")
+                    .attr("x", '5.5%')
+                    .attr("y", '-10%')
+                    .attr("width", '93%')
+                    .attr("height", '100%')
+                    .attr("xlink:href", './img/2019-2.jpg');
+            }, 1000)
+        }, 3000)
+    }, time * 16)
+}
+
+let removeP3Imge = function() {
+    if (p3Onece) return
+    p3Rect.selectAll('.imgRect').remove()
+    p3Rect.selectAll('.imgText').remove()
+    p3Rect.select('.p4svg').html(svg2)
+    setTimeout(function() {
+        p3Rect.select('.p3svg').remove()
+        p3Onece = true
+    }, 1000)
+}
+
+let removeP4Imge = function() {
+    if (p4Onece) return
+    p4Rect.selectAll('.imgRect').remove()
+    p4Rect.selectAll('.imgText').remove()
+    p4Rect.select('.p4svg').html(svg2)
+    setTimeout(function() {
+        p4Rect.select('.p4svg').remove()
+        p4Onece = true
+    }, 1000)
+}
+
+let removeP5Imge = function() {
+    if (p5Onece) return
+    p5Rect.selectAll('.imgRect').remove()
+    p5Rect.selectAll('.imgText').remove()
+    p5Rect.select('.p5svg').html(svg2)
+    setTimeout(function() {
+        p5Rect.select('.p5svg').remove()
+        p5Onece = true
+    }, 1000)
+}
+
+let removeP6Imge = function() {
+    if (p6Onece) return
+    p6Rect.selectAll('.imgRect').remove()
+    p6Rect.selectAll('.imgText').remove()
+    p6Rect.select('.p6svg').html(svg2)
+    setTimeout(function() {
+        p6Rect.select('.p6svg').remove()
+        p6Onece = true
+    }, 1000)
+}
+
+let removeP7Imge = function() {
+    if (p7Onece) return
+    p7Rect.selectAll('.imgRect').remove()
+    p7Rect.selectAll('.imgText').remove()
+    p7Rect.select('.p7svg').html(svg2)
+    setTimeout(function() {
+        p7Rect.select('.p7svg').remove()
+        p7Onece = true
+    }, 1000)
+}
+
+let removeP8Imge = function() {
+    if (p8Onece) return
+    p8Rect.selectAll('.imgRect').remove()
+    p8Rect.selectAll('.imgText').remove()
+    p8Rect.select('.p8svg').html(svg2)
+    setTimeout(function() {
+        p8Rect.select('.p8svg').remove()
+        p8Onece = true
+    }, 1000)
 }
