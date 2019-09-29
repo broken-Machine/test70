@@ -3,9 +3,9 @@
 // lastRect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('fill', '#fff').attr('x', '70%').attr('y', '2%').attr('opacity', '0')
 // lastRect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('fill', '#fff').attr('x', '60%').attr('y', '4%').attr('opacity', '0')
 // lastRect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('fill', '#fff').attr('x', '80%').attr('y', '5%').attr('opacity', '0')
-// lastRect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('fill', '#fff').attr('x', '90%').attr('y', '8%').attr('opacity', '0')
+// lastRect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('fill', '#fff').attr('x', '90%').attr('y', window.innerWidth * 0.127 / 2).attr('opacity', '0')
 // lastRect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('fill', '#fff').attr('x', '30%').attr('y', '15%').attr('opacity', '0')
-// lastRect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('fill', '#fff').attr('x', '40%').attr('y', '20%').attr('opacity', '0')
+// lastRect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('fill', '#fff').attr('x', window.innerWidth * 0.65 / 2).attr('y', '20%').attr('opacity', '0')
 // lastRect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('fill', '#fff').attr('x', '68%').attr('y', '50%').attr('opacity', '0')
 // lastRect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('fill', '#fff').attr('x', '78%').attr('y', '48%').attr('opacity', '0')
 // lastRect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('fill', '#fff').attr('x', '20%').attr('y', '78%').attr('opacity', '0')
@@ -14,7 +14,7 @@
 // lastRect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('stroke-width', '1').attr('stroke', '#fff').attr('x', '21%').attr('y', '12%').attr('opacity', '0')
 // lastRect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('stroke-width', '1').attr('stroke', '#fff').attr('x', '60%').attr('y', '46%').attr('opacity', '0')
 // lastRect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('stroke-width', '1').attr('stroke', '#fff').attr('x', '80%').attr('y', '20%').attr('opacity', '0')
-// lastRect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('stroke-width', '1').attr('stroke', '#fff').attr('x', '40%').attr('y', '34%').attr('opacity', '0')
+// lastRect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('stroke-width', '1').attr('stroke', '#fff').attr('x', window.innerWidth * 0.65 / 2).attr('y', '34%').attr('opacity', '0')
 // lastRect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('stroke-width', '1').attr('stroke', '#fff').attr('x', '25%').attr('y', '50%').attr('opacity', '0')
 // lastRect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('stroke-width', '1').attr('stroke', '#fff').attr('x', '50%').attr('y', '60%').attr('opacity', '0')
 // lastRect.append('rect').attr('width', '1rem').attr('height', '1rem').attr('stroke-width', '1').attr('stroke', '#fff').attr('x', '60%').attr('y', '70%').attr('opacity', '0')
@@ -48,19 +48,33 @@ let firstRect = function() {
 
 let lastRect = function() {
 
-    $('#last_rects').append('<div class="rects rects1" style="top:923vh;left:70vw"></div>')
-    $('#last_rects').append('<div class="rects rects1" style="top:926vh;left:60vw"></div>')
-    $('#last_rects').append('<div class="rects rects1" style="top:938vh;left:20vw"></div>')
-    $('#last_rects').append('<div class="rects rects1" style="top:937vh;left:80vw"></div>')
-    $('#last_rects').append('<div class="rects rects1" style="top:952vh;left:90vw"></div>')
-    $('#last_rects').append('<div class="rects rects1" style="top:953vh;left:30vw"></div>')
-    $('#last_rects').append('<div class="rects rects1 burl" style="top:957vh;left:62vw"></div>')
-    $('#last_rects').append('<div class="rects rects1 burl" style="top:973vh;left:68vw"></div>')
-    $('#last_rects').append('<div class="rects rects1 burl" style="top:968vh;left:28vw"></div>')
-    $('#last_rects').append('<div class="rects rects1 burl" style="top:959vh;left:68vw"></div>')
-    $('#last_rects').append('<div class="rects rects1" style="top:949vh;left:78vw"></div>')
-    $('#last_rects').append('<div class="rects rects1 burl" style="top:961vh;left:20vw"></div>')
-    $('#last_rects').append('<div class="rects rects1" style="top:961vh;left:41vw"></div>')
+    $('#last_rects').append('<div class="rects rects1" style="top:933vh;left:70vw"></div>')
+    $('#last_rects').append('<div class="rects rects1" style="top:936vh;left:60vw"></div>')
+    $('#last_rects').append('<div class="rects rects1" style="top:948vh;left:20vw"></div>')
+    $('#last_rects').append('<div class="rects rects1" style="top:947vh;left:80vw"></div>')
+    $('#last_rects').append('<div class="rects rects1" style="top:962vh;left:90vw"></div>')
+    $('#last_rects').append('<div class="rects rects1" style="top:963vh;left:30vw"></div>')
+    $('#last_rects').append('<div class="rects rects1 burl" style="top:967vh;left:62vw"></div>')
+    $('#last_rects').append('<div class="rects rects1 burl" style="top:983vh;left:68vw"></div>')
+    $('#last_rects').append('<div class="rects rects1 burl" style="top:978vh;left:28vw"></div>')
+    $('#last_rects').append('<div class="rects rects1 burl" style="top:969vh;left:68vw"></div>')
+    $('#last_rects').append('<div class="rects rects1" style="top:959vh;left:78vw"></div>')
+    $('#last_rects').append('<div class="rects rects1 burl" style="top:971vh;left:20vw"></div>')
+    $('#last_rects').append('<div class="rects rects1" style="top:971vh;left:41vw"></div>')
+
+    $('#last_rects').append('<div class="rects rects1" style="top:971vh;left:820vw"></div>')
+    $('#last_rects').append('<div class="rects rects1" style="top:942vh;left:64vw"></div>')
+    $('#last_rects').append('<div class="rects rects1" style="top:938vh;left:29vw"></div>')
+    $('#last_rects').append('<div class="rects rects1" style="top:927vh;left:88vw"></div>')
+    $('#last_rects').append('<div class="rects rects1" style="top:952vh;left:92vw"></div>')
+    $('#last_rects').append('<div class="rects rects1" style="top:969vh;left:31vw"></div>')
+    $('#last_rects').append('<div class="rects rects1 burl" style="top:960vh;left:67vw"></div>')
+    $('#last_rects').append('<div class="rects rects1 burl" style="top:978vh;left:62vw"></div>')
+    $('#last_rects').append('<div class="rects rects1 burl" style="top:961vh;left:31vw"></div>')
+    $('#last_rects').append('<div class="rects rects1 burl" style="top:962vh;left:64vw"></div>')
+    $('#last_rects').append('<div class="rects rects1" style="top:961vh;left:72vw"></div>')
+    $('#last_rects').append('<div class="rects rects1 burl" style="top:972vh;left:32vw"></div>')
+    $('#last_rects').append('<div class="rects rects1" style="top:951vh;left:46vw"></div>')
 
     $('#last_rects').append('<div class="rects rects2" style="top:960vh;left:21vw"></div>')
     $('#last_rects').append('<div class="rects rects2" style="top:922vh;left:60vw"></div>')
@@ -282,57 +296,51 @@ let fmOnece = true
 let firstRectMoveDown = function() {
     if (!fmOnece) return
     fmOnece = !fmOnece
-        // d3.select('#first_rects').transition().style('opacity', '1').duration(500)
-        // $('#first_rects div').each(function(d, i) {
-        //     $(this)[0].style.top = parseInt($(this)[0].style.top) + 40 + 'vh';
-        // });
-        // setTimeout(function() {
-        //         d3.select('#first_rects').transition().style('opacity', '0').duration(500)
-        //     }, 3500)
-        // $('#first_rects div').each(function() {
-        //     let a = $(this[0]).style
-        //     debugger
-        //     $(this[0]).style.top = parseInt($(this)[0].style.top) + 3 + 'vh'
-        // });
-    d3.selectAll('#first_rects .rects').transition().duration(2000)
-        .style('transform', 'translateY(' + window.innerHeight / 2 + 'px)').ease(d3.easeLinear);
-    setTimeout(function() {
-        d3.select('#first_rects').transition().style('opacity', '0').duration(500)
-    }, 2000)
+    d3.selectAll('#first_rects .rects').transition().duration(function(d, i) {
+            return i * Math.random() * 200
+        }).delay(function(d, i) {
+            return i * Math.random() * 100
+        }).style('transform', 'translateY(' + window.innerHeight / 2 + 'px)').ease(d3.easeLinear)
+        .transition().style('opacity', '0').duration(500);
+    // setTimeout(function() {
+    //     d3.select('#first_rects')
+    // }, 2000)
+}
+let firstRectMoveUp = function() {
+    if (fmOnece) return
+    fmOnece = !fmOnece
+    d3.selectAll('#first_rects .rects').transition().duration(function(d, i) {
+            return i * Math.random() * 200
+        }).delay(function(d, i) {
+            return i * Math.random() * 100
+        }).style('transform', 'translateY(' + 0 + 'px)').ease(d3.easeLinear)
+        .transition().style('opacity', '1').duration(500);
+    // setTimeout(function() {
+    //     d3.select('#first_rects')
+    // }, 2000)
 }
 
 let lmOnece = true
 let lastRectMoveDown = function() {
-        if (!lmOnece) return
-        lmOnece = !lmOnece
-            // d3.select('#first_rects').transition().style('opacity', '1').duration(500)
-            // $('#first_rects div').each(function(d, i) {
-            //     $(this)[0].style.top = parseInt($(this)[0].style.top) + 40 + 'vh';
-            // });
-            // setTimeout(function() {
-            //         d3.select('#first_rects').transition().style('opacity', '0').duration(500)
-            //     }, 3500)
-            // $('#first_rects div').each(function() {
-            //     let a = $(this[0]).style
-            //     debugger
-            //     $(this[0]).style.top = parseInt($(this)[0].style.top) + 3 + 'vh'
-            // });
-        d3.selectAll('#last_rects .rects').transition().duration(2000)
-            .style('transform', 'translateY(' + window.innerHeight / 2 + 'px)').ease(d3.easeLinear);
-        setTimeout(function() {
-            d3.select('#last_rects').transition().style('opacity', '0').duration(500)
-        }, 2000)
-    }
-    // let firstRectMoveUp = function() {
-    //     if (fmOnece) {
-    //         fmOnece = !fmOnece
-    //         return
-    //     }
-    //     d3.select('#first_rects').transition().style('opacity', '1').duration(500)
-    //     $('#first_rects div').each(function(d, i) {
-    //         $(this)[0].style.top = parseInt($(this)[0].style.top) - 40 + 'vh';
-    //     });
-    // }
+    if (!lmOnece) return
+    lmOnece = !lmOnece
+    d3.selectAll('#last_rects .rects').transition().duration(function(d, i) {
+            return i * Math.random() * 200
+        }).delay(function(d, i) {
+            return i * Math.random() * 100
+        }).style('transform', 'translateY(' + window.innerHeight * 0.9 + 'px)').ease(d3.easeLinear)
+        .transition().style('opacity', '0').duration(500);
+}
+let lastRectMoveUp = function() {
+    if (lmOnece) return
+    lmOnece = !lmOnece
+    d3.selectAll('#last_rects .rects').transition().duration(function(d, i) {
+            return i * Math.random() * 200
+        }).delay(function(d, i) {
+            return i * Math.random() * 100
+        }).style('transform', 'translateY(' + 0 + 'px)').ease(d3.easeLinear)
+        .transition().style('opacity', '1').duration(500);
+}
 
 let svg1 = `<svg id="id" data-name="name" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 524 389.84" style="background:#000"><defs><style>.cls-1,.cls-2{fill:none;}.cls-1{stroke:#fff;stroke-miterlimit:10;}.cls-3{fill:#fff;}</style></defs><title>a</title><path class="cls-1 EVoYIwfV_0" d="M141.5,0.5L398.5,0.5"></path>
 <path class="cls-1 EVoYIwfV_1" d="M24.5,100.05L24.5,8.5L112.05,8.5"></path>
@@ -493,14 +501,14 @@ let addP3Imge = function(time) {
             .attr("width", '93%')
             .attr("height", '100%')
             .attr("xlink:href", './img/1969-3.jpg');
-        p3Rect.append('rect').attr('class', 'imgRect').attr('width', '64%').attr('height', '2rem').attr('y', '40%').attr('x', '19.2%').attr('fill', '#808080').attr('opacity', '0.8')
-        p3Rect.append('text').attr('class', 'imgText').attr('width', '64%').attr('height', '2rem').attr('y', '44.5%').attr('x', '21%').attr('fill', '#fff').attr('font-size', '1.1rem').html('参与“东方红”卫星发射（1970）')
+        p3Rect.append('rect').attr('class', 'imgRect').attr('width', '64%').attr('height', window.innerWidth * 0.127 / 2).attr('y', window.innerWidth * 0.65 / 2).attr('x', '19.2%').attr('fill', '#808080').attr('opacity', '0.8')
+        p3Rect.append('text').attr('class', 'imgText').attr('width', '64%').attr('height', window.innerWidth * 0.127 / 2).attr('y', window.innerWidth * 0.731 / 2).attr('x', '21%').attr('fill', '#fff').attr('font-size', '1.1rem').html('参与“东方红”卫星发射（1970）')
         setTimeout(function() {
             p3Rect.select('.imgRect').attr('height', '0').transition().duration(2000)
             p3Rect.select(' .imgText').html('')
             p3Rect.select('.p3svg').html(svg2)
             setTimeout(function() {
-                p3Rect.select('.imgRect').attr('height', '2rem').transition()
+                p3Rect.select('.imgRect').attr('height', window.innerWidth * 0.127 / 2).transition()
                 p3Rect.select(' .imgText').html('参与“东方红”卫星发射（1970）')
                 p3Rect.select('.p3svg').html(svg1)
                     .append("image")
@@ -514,14 +522,14 @@ let addP3Imge = function(time) {
                     p3Rect.select(' .imgText').html('')
                     p3Rect.select('.p3svg').html(svg2)
                     setTimeout(function() {
-                        p3Rect.select('.imgRect').attr('height', '2rem').transition()
+                        p3Rect.select('.imgRect').attr('height', window.innerWidth * 0.127 / 2).transition()
                         p3Rect.select(' .imgText').html('原子弹部件研发生产（1965）')
                         p3Rect.select('.p3svg').html(svg1)
                             .append("image")
                             .attr("x", '5.5%')
                             .attr("y", '-10%')
                             .attr("width", '93%')
-                            .attr("height", '89%')
+                            .attr("height", '100%')
                             .attr("xlink:href", './img/1969-1.jpg');
                     }, 1000)
                 }, 3000)
@@ -542,14 +550,14 @@ let addP4Imge = function(time) {
             .attr("width", '93%')
             .attr("height", '100%')
             .attr("xlink:href", './img/1979-1.jpg');
-        p4Rect.append('rect').attr('class', 'imgRect').attr('width', '64%').attr('height', '2rem').attr('y', '40%').attr('x', '19.2%').attr('fill', '#808080').attr('opacity', '0.8')
-        p4Rect.append('text').attr('class', 'imgText').attr('width', '64%').attr('height', '2rem').attr('y', '44.5%').attr('x', '21%').attr('fill', '#fff').attr('font-size', '1.1rem').html('第一台“双燕”牌冰箱下线（1983）')
+        p4Rect.append('rect').attr('class', 'imgRect').attr('width', '64%').attr('height', window.innerWidth * 0.127 / 2).attr('y', window.innerWidth * 0.65 / 2).attr('x', '19.2%').attr('fill', '#808080').attr('opacity', '0.8')
+        p4Rect.append('text').attr('class', 'imgText').attr('width', '64%').attr('height', window.innerWidth * 0.127 / 2).attr('y', window.innerWidth * 0.731 / 2).attr('x', '21%').attr('fill', '#fff').attr('font-size', '1.1rem').html('第一台“双燕”牌冰箱下线（1983）')
         setTimeout(function() {
             p4Rect.select('.imgRect').attr('height', '0').transition().duration(2000)
             p4Rect.select(' .imgText').html('')
             p4Rect.select('.p4svg').html(svg2)
             setTimeout(function() {
-                p4Rect.select('.imgRect').attr('height', '2rem').transition()
+                p4Rect.select('.imgRect').attr('height', window.innerWidth * 0.127 / 2).transition()
                 p4Rect.select(' .imgText').html('第一台黑白电视机')
                 p4Rect.select('.p4svg').html(svg1)
                     .append("image")
@@ -557,7 +565,7 @@ let addP4Imge = function(time) {
                     .attr("y", '-10%')
                     .attr("width", '93%')
                     .attr("height", '100%')
-                    .attr("xlink:href", './img/1979s-2.jpg');
+                    .attr("xlink:href", './img/1979-2.jpg');
             }, 1000)
         }, 3000)
     }, time * 10)
@@ -575,8 +583,8 @@ let addP5Imge = function(time) {
             .attr("width", '93%')
             .attr("height", '100%')
             .attr("xlink:href", './img/1989-1.jpg');
-        p5Rect.append('rect').attr('class', 'imgRect').attr('width', '64%').attr('height', '2rem').attr('y', '40%').attr('x', '19.2%').attr('fill', '#808080').attr('opacity', '0.8')
-        p5Rect.append('text').attr('class', 'imgText').attr('width', '64%').attr('height', '2rem').attr('y', '44.5%').attr('x', '21%').attr('fill', '#fff').attr('font-size', '1.1rem').html('地奥心血康获中科院科技进步一等奖（1988）')
+        p5Rect.append('rect').attr('class', 'imgRect').attr('width', '64%').attr('height', window.innerWidth * 0.127 / 2).attr('y', window.innerWidth * 0.65 / 2).attr('x', '19.2%').attr('fill', '#808080').attr('opacity', '0.8')
+        p5Rect.append('text').attr('class', 'imgText').attr('width', '64%').attr('height', window.innerWidth * 0.127 / 2).attr('y', window.innerWidth * 0.731 / 2).attr('x', '21%').attr('fill', '#fff').attr('font-size', '1.1rem').html('地奥心血康获中科院科技进步一等奖（1988）')
     }, time * 11)
 }
 
@@ -592,8 +600,8 @@ let addP6Imge = function(time) {
             .attr("width", '93%')
             .attr("height", '100%')
             .attr("xlink:href", './img/1999-1.jpg');
-        p6Rect.append('rect').attr('class', 'imgRect').attr('width', '64%').attr('height', '2rem').attr('y', '40%').attr('x', '19.2%').attr('fill', '#808080').attr('opacity', '0.8')
-        p6Rect.append('text').attr('class', 'imgText').attr('width', '64%').attr('height', '2rem').attr('y', '44.5%').attr('x', '21%').attr('fill', '#fff').attr('font-size', '1.1rem').html('枭龙飞机成功首飞（2003）')
+        p6Rect.append('rect').attr('class', 'imgRect').attr('width', '64%').attr('height', window.innerWidth * 0.127 / 2).attr('y', window.innerWidth * 0.65 / 2).attr('x', '19.2%').attr('fill', '#808080').attr('opacity', '0.8')
+        p6Rect.append('text').attr('class', 'imgText').attr('width', '64%').attr('height', window.innerWidth * 0.127 / 2).attr('y', window.innerWidth * 0.731 / 2).attr('x', '21%').attr('fill', '#fff').attr('font-size', '1.1rem').html('枭龙飞机成功首飞（2003）')
     }, time * 12)
 }
 
@@ -609,14 +617,14 @@ let addP7Imge = function(time) {
             .attr("width", '93%')
             .attr("height", '100%')
             .attr("xlink:href", './img/2009-1.jpg');
-        p7Rect.append('rect').attr('class', 'imgRect').attr('width', '64%').attr('height', '2rem').attr('y', '40%').attr('x', '19.2%').attr('fill', '#808080').attr('opacity', '0.8')
-        p7Rect.append('text').attr('class', 'imgText').attr('width', '64%').attr('height', '2rem').attr('y', '44.5%').attr('x', '21%').attr('fill', '#fff').attr('font-size', '1.1rem').html('C919大飞机首架机头下线（2013）')
+        p7Rect.append('rect').attr('class', 'imgRect').attr('width', '64%').attr('height', window.innerWidth * 0.127 / 2).attr('y', window.innerWidth * 0.65 / 2).attr('x', '19.2%').attr('fill', '#808080').attr('opacity', '0.8')
+        p7Rect.append('text').attr('class', 'imgText').attr('width', '64%').attr('height', window.innerWidth * 0.127 / 2).attr('y', window.innerWidth * 0.731 / 2).attr('x', '21%').attr('fill', '#fff').attr('font-size', '1.1rem').html('C919大飞机首架机头下线（2013）')
         setTimeout(function() {
             p7Rect.select('.imgRect').attr('height', '0').transition().duration(2000)
             p7Rect.select(' .imgText').html('')
             p7Rect.select('.p7svg').html(svg2)
             setTimeout(function() {
-                p7Rect.select('.imgRect').attr('height', '2rem').transition()
+                p7Rect.select('.imgRect').attr('height', window.innerWidth * 0.127 / 2).transition()
                 p7Rect.select(' .imgText').html('有轨电车')
                 p7Rect.select('.p7svg').html(svg1)
                     .append("image")
@@ -642,14 +650,14 @@ let addP8Imge = function(time) {
             .attr("width", '93%')
             .attr("height", '100%')
             .attr("xlink:href", './img/2019-1.jpg');
-        p8Rect.append('rect').attr('class', 'imgRect').attr('width', '64%').attr('height', '2rem').attr('y', '40%').attr('x', '19.2%').attr('fill', '#808080').attr('opacity', '0.8')
-        p8Rect.append('text').attr('class', 'imgText').attr('width', '64%').attr('height', '2rem').attr('y', '44.5%').attr('x', '21%').attr('fill', '#fff').attr('font-size', '1.1rem').html('京东方AMOLED柔性显示屏下线（2018）')
+        p8Rect.append('rect').attr('class', 'imgRect').attr('width', '64%').attr('height', window.innerWidth * 0.127 / 2).attr('y', window.innerWidth * 0.65 / 2).attr('x', '19.2%').attr('fill', '#808080').attr('opacity', '0.8')
+        p8Rect.append('text').attr('class', 'imgText').attr('width', '64%').attr('height', window.innerWidth * 0.127 / 2).attr('y', window.innerWidth * 0.731 / 2).attr('x', '21%').attr('fill', '#fff').attr('font-size', '1.1rem').html('京东方AMOLED柔性显示屏下线（2018）')
         setTimeout(function() {
             p8Rect.select('.imgRect').attr('height', '0').transition().duration(2000)
             p8Rect.select(' .imgText').html('')
             p8Rect.select('.p8svg').html(svg2)
             setTimeout(function() {
-                p8Rect.select('.imgRect').attr('height', '2rem').transition()
+                p8Rect.select('.imgRect').attr('height', window.innerWidth * 0.127 / 2).transition()
                 p8Rect.select(' .imgText').html('康博西普眼用注射液')
                 p8Rect.select('.p8svg').html(svg1)
                     .append("image")

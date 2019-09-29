@@ -131,6 +131,7 @@ body.canscroll {
     background-repeat: no-repeat;
     background-position: center center;
     z-index: 10;
+    opacity: 1;
 }
 
 .step .cover {
@@ -561,11 +562,6 @@ body.canscroll {
     height: 1rem;
     border: 1px solid #fff;
     transition: 2s;
-}
-
-.rects {
-    width: 1rem;
-    height: 1rem;
 }
 
 .burl {

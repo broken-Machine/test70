@@ -193,6 +193,9 @@
                 $('.leftSlider').css('opacity', '0')
                 $(".updown").css('opacity', '0')
             }
+
+            $(".bgSticky").css('opacity', (1 - $(window).scrollTop() / window.innerHeight) + '');
+
             if ($(window).scrollTop() >= window.innerHeight * 10 - rhombus_h) {
                 $(".rhombus div").css('position', 'absolute');
             }
@@ -202,29 +205,27 @@
                 $('.updown').css('opacity', '0')
             }
 
-            if ($(window).scrollTop() >= window.innerHeight * 1.6 && $(window).scrollTop() <= window.innerHeight * 2.1) {
-                d3.select('#first_rects').transition().style('opacity', '1').duration(500)
+            if ($(window).scrollTop() >= window.innerHeight * 1.6 && $(window).scrollTop() <= window.innerHeight * 2.3) {
                 firstRectMoveDown()
                     //firstRectAnimate($(window).scrollTop() - window.innerHeight);
                     // d3.select('#first_rects').transition().duration(2000).attr('height', '0').ease(d3.easeExpOut);
             } else {
-                fmOnece = true
-                d3.selectAll('#first_rects .rects').transition().duration(500)
-                    .style('transform', 'translateY(0px)').ease(d3.easeLinear);
-                d3.select('#first_rects').transition().style('opacity', '0').duration(500)
+                firstRectMoveUp()
+                    // d3.selectAll('#first_rects .rects').transition().duration(500)
+                    //     .style('transform', 'translateY(0px)').ease(d3.easeLinear);
+                    // d3.select('#first_rects').transition().style('opacity', '0').duration(500)
                     // firstRectMoveUp()
                     // d3.select('#first_rects').transition().duration(2000).attr('height', window.innerHeight / 2).ease(d3.easeExpOut);;
             }
 
-            if ($(window).scrollTop() >= window.innerHeight * 9.5) {
-                d3.select('#last_rects').transition().style('opacity', '1').duration(500)
+            if ($(window).scrollTop() >= window.innerHeight * 9.6 && $(window).scrollTop() <= window.innerHeight * 10.7) {
                 lastRectMoveDown()
                     // d3.select('#last_rects svg').transition().duration(2000).attr('height', window.innerHeight).ease(d3.easeExpOut).attr('opacity', '1');
             } else {
-                lmOnece = true
-                d3.selectAll('#last_rects .rects').transition().duration(500)
-                    .style('transform', 'translateY(0px)').ease(d3.easeLinear);
-                d3.select('#last_rects').transition().style('opacity', '0').duration(500)
+                lastRectMoveUp()
+                    // d3.selectAll('#last_rects .rects').transition().duration(500)
+                    //     .style('transform', 'translateY(0px)').ease(d3.easeLinear);
+                    // d3.select('#last_rects').transition().style('opacity', '0').duration(500)
                     // d3.select('#last_rects svg').transition().duration(2000).attr('height', 0).ease(d3.easeExpOut).attr('opacity', '1');
             }
             // if ($(window).scrollTop() >= window.innerHeight * 10.5) {

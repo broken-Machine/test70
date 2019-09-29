@@ -126,7 +126,7 @@ var setCanvasSize = function() {
 };
 
 
-if (!isMobile.any) { // pc
+if (isMobile.any) { // pc
     pcSet();
     pcSetStyle();
     setVh();
