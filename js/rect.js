@@ -62,7 +62,7 @@ let lastRect = function() {
     $('#last_rects').append('<div class="rects rects1 burl" style="top:971vh;left:20vw"></div>')
     $('#last_rects').append('<div class="rects rects1" style="top:971vh;left:41vw"></div>')
 
-    $('#last_rects').append('<div class="rects rects1" style="top:971vh;left:820vw"></div>')
+    $('#last_rects').append('<div class="rects rects1" style="top:971vh;left:82vw"></div>')
     $('#last_rects').append('<div class="rects rects1" style="top:942vh;left:64vw"></div>')
     $('#last_rects').append('<div class="rects rects1" style="top:938vh;left:29vw"></div>')
     $('#last_rects').append('<div class="rects rects1" style="top:927vh;left:88vw"></div>')
